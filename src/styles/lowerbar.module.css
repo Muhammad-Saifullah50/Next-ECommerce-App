@@ -1,14 +1,37 @@
 .lowerbar{
     border: 2px solid blue;
     display: flex;
+    height: 8vh;
 }
 .logobox{
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    width: 50vw;
 }
 
 .searchbox{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    width: 30vw;
 }
 .cartbox{
     border: 2px solid orange;
+    width: 20vw;
+}
+.logo{
+    width: 171px;
+    height: 124px;
+    margin: -39px 63px
+}
+.search{
+    width: 27vw;
+    height: 5vh;
+    margin-top: 6px;
+    margin-left: -2px;
+    font-size: 15px;
+
+
+}
+.searchicon{
+    margin-left: -27px;
+    margin-top: 12px;
+    border-radius: 5px;
 }
