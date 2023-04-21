@@ -1,0 +1,14 @@
+.lowerbar{
+    border: 2px solid blue;
+    display: flex;
+}
+.logobox{
+    border: 2px solid green;
+}
+
+.searchbox{
+    border: 2px solid yellow;
+}
+.cartbox{
+    border: 2px solid orange;
+}
