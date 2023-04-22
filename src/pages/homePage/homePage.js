@@ -1,11 +1,12 @@
 import Header from "@/components/header/header"
+import Carousel from "./Carousel/Carousel"
 
 const homePage = () => {
 
-    return(
+    return (
         <>
-        <Header />
-        
+            <Header />
+            <Carousel />
         </>
     )
 }

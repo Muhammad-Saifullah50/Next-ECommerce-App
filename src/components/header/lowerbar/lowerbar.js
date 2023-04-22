@@ -1,4 +1,8 @@
+
 import styles from '@/styles/lowerbar.module.css'
+// import '@/styles/globals.css'
+
+
 import Image from 'next/image'
 import Head from 'next/head'
 
