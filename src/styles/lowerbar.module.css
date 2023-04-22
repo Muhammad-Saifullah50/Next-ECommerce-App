@@ -1,36 +1,61 @@
-.lowerbar{
-    border: 2px solid blue;
+.lowerbar {
+    /* border: 2px solid blue; */
     display: flex;
     height: 8vh;
+    background-color: #f0f3ff;
+
+
 }
-.logobox{
+
+.logobox {
     /* border: 2px solid green; */
     width: 50vw;
 }
 
-.searchbox{
+.searchbox {
     /* border: 2px solid yellow; */
     width: 30vw;
+    margin-top: 6px;
 }
-.cartbox{
-    border: 2px solid orange;
-    width: 20vw;
+
+.cartbox {
+    /* border: 2px solid orange; */
+    width: 21vw;
+    margin-right: 21px;
+    background-color: #f0f3ff;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 5px;
+    
 }
-.logo{
-    width: 171px;
-    height: 124px;
-    margin: -39px 63px
+.cartbox img{
+    margin-top: 7px;
+    margin-right: 31px;
 }
-.search{
+.carttext{
+    margin-left: 14px;
+}
+
+.logo {
+
+    width: 170px;
+    height: 43px;
+    margin: -29px 63px
+}
+
+.search {
     width: 27vw;
     height: 5vh;
-    margin-top: 6px;
+    margin-top: 7px;
     margin-left: -2px;
     font-size: 15px;
 
 
 }
-.searchicon{
+
+.searchicon {
     margin-left: -27px;
     margin-top: 12px;
     border-radius: 5px;
