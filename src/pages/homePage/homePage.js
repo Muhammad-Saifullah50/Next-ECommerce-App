@@ -1,5 +1,6 @@
 import Header from "@/components/header/header"
 import Carousel from "./Carousel/Carousel"
+import Brands from "./Brands/Brands"
 
 const homePage = () => {
 
@@ -7,6 +8,8 @@ const homePage = () => {
         <>
             <Header />
             <Carousel />
+            <Brands />
+
         </>
     )
 }

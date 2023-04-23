@@ -11,6 +11,8 @@
     /* border: 2px solid green; */
     display: flex;
     margin: 5vh auto;
+    z-index: 2;
+    position: relative;
 
 
 }
