@@ -1,7 +1,7 @@
 .navbar {
     border: 2px solid orange;
     display: flex;
-    width: 99vw;
+    width: 100vw;
     justify-content: space-evenly;
     background-color: #f0dd0c;
 }
