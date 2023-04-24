@@ -9,7 +9,7 @@
 
 .heading {
     /* border: 2px solid red; */
-    margin: 14vh auto;
+    margin: 14vh 10vh;
     width: 95%;
 }
 
@@ -44,9 +44,9 @@
 
 .cardgrid {
     display: grid;
-    grid-template-columns: 15vh 15vh 15vh;
+    grid-template-columns: 15vh 15vh 15vh 15vh;
     grid-template-rows: 15vh 15vh;
-    column-gap: 40vh;
+    column-gap: 22vh;
     row-gap: 20vh;
     margin: auto auto;
     /* border: 2px solid red; */
