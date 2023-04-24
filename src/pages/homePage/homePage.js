@@ -1,6 +1,7 @@
 import Header from "@/components/header/header"
 import Carousel from "./Carousel/Carousel"
 import Brands from "./Brands/Brands"
+import Categories from "./Categories/Categories"
 
 const homePage = () => {
 
@@ -9,7 +10,7 @@ const homePage = () => {
             <Header />
             <Carousel />
             <Brands />
-
+            <Categories />
         </>
     )
 }

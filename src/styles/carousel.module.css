@@ -4,15 +4,13 @@
     background-image: url(/images/slide1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    animation-name: carousel_changeImage__bLr9e;
+    animation-name: changeImage;
     animation-delay: 10s;
     animation-duration: 15s;
     animation-iteration-count: infinite;
     /* border: 2px solid green; */
     display: flex;
     margin: 5vh auto;
-    z-index: 2;
-    position: relative;
 
 
 }
@@ -52,6 +50,8 @@
     left: 57%;
     font-size: 1.5rem;
     background-color: rgba(12, 11, 11, 0.603);
+    position: relative;
+    z-index: 1;
     
 }
 .carouseltext h2{

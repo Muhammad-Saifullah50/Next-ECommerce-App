@@ -1,0 +1,14 @@
+.categories {
+    border: 2px solid red;
+    margin: 14vh auto;
+    width: 95%;
+
+}
+
+.cards {
+    border: 1px solid black;
+}
+.cardgrid{
+    display: grid;
+
+}
