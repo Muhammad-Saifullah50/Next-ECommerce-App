@@ -32,13 +32,15 @@ const Categories = () => {
 
 
                     {contentfulData && contentfulData?.items?.map((item) => {
-                        console.log(contentfulData.items[1])
-                        return (
-                            <p>{contentfulData.items[0].fields.title}</p>
-                        )
+                        console.log(item?.fields?.title)
+
+                        if (item.sys.id === item?.fields?.imageId) {
+                            return (
+                                <p>{item?.fields?.title}</p>
+                            )
+                        }
 
                     })}
-
 
                 </div>
 
@@ -46,18 +48,53 @@ const Categories = () => {
                     <Image src="/images/category2.png" width={144} height={144}>
 
                     </Image>
-                    <p>Rotary Compressor</p></div>
+                    
+                    {contentfulData && contentfulData?.items?.map((item) => {
+                        console.log(item?.fields?.title)
+                        if (item.sys.id === '6cYafFjpZfFxLQNjCpTjfH') {
+                            return (
+                                <p>{item?.fields?.title}</p>
+                            )
+                        }
+
+                    })}
+
+                    </div>
+
                 <div className={styles.cards}>
                     <Image src="/images/toolbox.png" width={144} height={144}>
                     </Image>
-                    <p>Multipurpose Tool Box</p>
+
+                    {contentfulData && contentfulData?.items?.map((item) => {
+                        console.log(item)
+                        console.log(item?.fields?.title)
+                        if (item.sys.id === '3KTDuJ3m402V1aTV2uSfzG') {
+                            return (
+                                <p>{item?.fields?.title}</p>
+                            )
+                        }
+                    })}
+
                 </div>
                 <div className={styles.cards}>
+
                     <Image src="/images/category4.png" width={144} height={144}>
 
                     </Image>
-                    <p>Heayv Duty Stapler</p>
+                    
+                    {contentfulData && contentfulData?.items?.map((item) => {
+                        console.log(item)
+                        console.log(item?.fields?.title)
+                        if (item.sys.id === "NmWKEav8HzjwCBl0Z4qQI") {
+                            return (
+                                <p>{item?.fields?.title}</p>
+                            )
+                        }
+
+                    })}
+
                 </div>
+
 
                 <div className={styles.cards}>
                     <Image src="/images/category3.png" width={144} height={144}>
@@ -81,7 +118,7 @@ const Categories = () => {
 
                 </div>
                 <div className={styles.cards}>
-                    <iframe width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
             </div>
         </div>
