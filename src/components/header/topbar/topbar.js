@@ -1,14 +1,9 @@
 import styles from '@/styles/topbar.module.css'
 import Image from 'next/image'
-import Head from 'next/head'
 const topbar = () => {
 
     return (<>
-        <Head>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet" />
-        </Head>
+       
         <div className={styles.topbar}>
             <div className={styles.phno}>
                 <Image className={styles.phone} src="/images/phone.png" width={15} height={15}>
