@@ -34,7 +34,7 @@ const Categories = () => {
                     {contentfulData && contentfulData?.items?.map((item) => {
                         console.log(item?.fields?.title)
 
-                        if (item.sys.id === item?.fields?.imageId) {
+                        if (item.sys.id === '4n8Vxvh6FsM216olF1R6hC') {
                             return (
                                 <p>{item?.fields?.title}</p>
                             )
@@ -48,7 +48,7 @@ const Categories = () => {
                     <Image src="/images/category2.png" width={144} height={144}>
 
                     </Image>
-                    
+
                     {contentfulData && contentfulData?.items?.map((item) => {
                         console.log(item?.fields?.title)
                         if (item.sys.id === '6cYafFjpZfFxLQNjCpTjfH') {
@@ -59,7 +59,7 @@ const Categories = () => {
 
                     })}
 
-                    </div>
+                </div>
 
                 <div className={styles.cards}>
                     <Image src="/images/toolbox.png" width={144} height={144}>
@@ -81,11 +81,11 @@ const Categories = () => {
                     <Image src="/images/category4.png" width={144} height={144}>
 
                     </Image>
-                    
+
                     {contentfulData && contentfulData?.items?.map((item) => {
                         console.log(item)
                         console.log(item?.fields?.title)
-                        if (item.sys.id === "NmWKEav8HzjwCBl0Z4qQI") {
+                        if (item.sys.id === 'NmWKEav8HzjwCBl0Z4qQI') {
                             return (
                                 <p>{item?.fields?.title}</p>
                             )
@@ -100,22 +100,50 @@ const Categories = () => {
                     <Image src="/images/category3.png" width={144} height={144}>
 
                     </Image>
-                    <p>Heavy Duty Polisher</p>
+                    {contentfulData && contentfulData?.items?.map((item) => {
+                        console.log(item)
+                        console.log(item?.fields?.title)
+                        if (item.sys.id === '4jMnuJn55XLgI5uK6zJVQT') {
+                            return (
+                                <p>{item?.fields?.title}</p>
+                            )
+                        }
+
+                    })}
+
 
                 </div>
                 <div className={styles.cards}>
                     <Image src="/images/category6.png" width={144} height={144}>
 
                     </Image>
-                    <p>Heavy Duty Angle Grinder</p>
+                    {contentfulData && contentfulData?.items?.map((item) => {
+                        console.log(item)
+                        console.log(item?.fields?.title)
+                        if (item.sys.id === '4dxFYquMLEG3UQvDiCKS8A') {
+                            return (
+                                <p>{item?.fields?.title}</p>
+                            )
+                        }
 
+                    })}
                 </div>
                 <div className={styles.cards}>
                     <Image src="/images/category5.png" width={144} height={144}>
 
                     </Image>
-                    <p>Heavy Duty Air Blower</p>
 
+                    {contentfulData && contentfulData?.items?.map((item) => {
+                        console.log(item)
+                        console.log(item?.fields?.title)
+                        if (item.sys.id === '5ikGRgtNGXtwR2nYYN5mXl') {
+                            return (
+                                <p>{item?.fields?.title}</p>
+                            )
+                        }
+
+                    })
+                    }
                 </div>
                 <div className={styles.cards}>
                     <iframe width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
