@@ -19,202 +19,150 @@ const Categories = () => {
         apiData();
     }, [])
 
+    // this function will render title of our categories.
 
-    return (<>
+    const renderTitle = (id) => {
+        const item = contentfulData?.items?.find((item) => item.sys.id === id)
+        return item ? <p key={item.sys.id}>{item?.fields?.title}</p> : null
 
+    }
 
-        <div className={styles.heading}>
-            <h2>Select a category to get started</h2>
-        </div>
-        <div className={styles.categories}>
+    // this function will render the image of our category
 
-            <div className={styles.cardgrid}>
-                <div className={styles.cards}>
+    const renderImage = (id, alt) => {
+        const asset = contentfulData?.includes?.Asset.find((asset) => { asset.sys.id === id })
 
-                    {contentfulData && contentfulData?.includes?.Asset?.map((asset) => {
-                        if (asset.sys.id === '29fPL5QFfyWPxCAZ0pkiQz') {
-                            const imageUrl = 'https:' + asset.fields.file.url
-                            return (
-                                <Image src={imageUrl} width={144} height={144} alt='category1' key={asset.sys.id}>
-                                </Image>
-                            )
-                        }
-                    }
-                    )
-                    }
+        const imageUrl = 'https: ' + asset.fields.file.url
+        console.log(imageUrl)
+
+        return <Image src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id}>
+
+        </Image>
+    
+}
 
 
 
-                    {contentfulData && contentfulData?.items?.map((item) => {
-                        // console.log(item?.fields?.title)
 
-                        if (item.sys.id === '4n8Vxvh6FsM216olF1R6hC') {
-                            return (
-                                <p key={item.sys.id}>{item?.fields?.title}</p>
-                            )
-                        }
 
-                    })}
+return (<>
 
-                </div>
 
-                <div className={styles.cards}>
+    <div className={styles.heading}>
+        <h2>Select a category to get started</h2>
+    </div>
+    <div className={styles.categories}>
+
+        <div className={styles.cardgrid}>
+            <div className={styles.cards}>
+                {renderImage('29fPL5QFfyWPxCAZ0pkiQz', 'category1')}
+
+                {renderTitle('4n8Vxvh6FsM216olF1R6hC')}
+
+            </div>
+
+            <div className={styles.cards}>
                 {contentfulData && contentfulData?.includes?.Asset?.map((asset) => {
-                        if (asset.sys.id === 'Qybq2kbrlxWZ7FcK0WUPd') {
-                            const imageUrl = 'https:' + asset.fields.file.url
-                            return (
-                                <Image src={imageUrl} width={144} height={144} alt='category2' key={asset.sys.id}>
-                                </Image>
-                            )
-                        }
+                    if (asset.sys.id === 'Qybq2kbrlxWZ7FcK0WUPd') {
+                        const imageUrl = 'https:' + asset.fields.file.url
+                        return (
+                            <Image src={imageUrl} width={144} height={144} alt='category2' key={asset.sys.id}>
+                            </Image>
+                        )
                     }
-                    )
-                    }
+                }
+                )
+                }
 
 
-                    {contentfulData && contentfulData?.items?.map((item) => {
-                        // console.log(item?.fields?.title)
-                        if (item.sys.id === '6cYafFjpZfFxLQNjCpTjfH') {
-                            return (
-                                <p key={item.sys.id}>{item?.fields?.title}</p>
-                            )
-                        }
+                {renderTitle('6cYafFjpZfFxLQNjCpTjfH')}
 
-                    })}
+            </div>
 
-                </div>
-
-                <div className={styles.cards}>
+            <div className={styles.cards}>
                 {contentfulData && contentfulData?.includes?.Asset?.map((asset) => {
-                        if (asset.sys.id === '28uDfdCuQxxxuzCMwiXQWT') {
-                            const imageUrl = 'https:' + asset.fields.file.url
-                            return (
-                                <Image src={imageUrl} width={144} height={144} alt='category3' key={asset.sys.id}>
-                                </Image>
-                            )
-                        }
+                    if (asset.sys.id === '28uDfdCuQxxxuzCMwiXQWT') {
+                        const imageUrl = 'https:' + asset.fields.file.url
+                        return (
+                            <Image src={imageUrl} width={144} height={144} alt='category3' key={asset.sys.id}>
+                            </Image>
+                        )
                     }
-                    )
-                    }
+                }
+                )
+                }
 
-                    {contentfulData && contentfulData?.items?.map((item) => {
-                        // console.log(item)
-                        // console.log(item?.fields?.title)
-                        if (item.sys.id === '3KTDuJ3m402V1aTV2uSfzG') {
-                            return (
-                                <p key={item.sys.id}>{item?.fields?.title}</p>
-                            )
-                        }
-                    })}
-
-                </div>
-                <div className={styles.cards}>
+                {renderTitle('3KTDuJ3m402V1aTV2uSfzG')}
+            </div>
+            <div className={styles.cards}>
 
                 {contentfulData && contentfulData?.includes?.Asset?.map((asset) => {
-                        if (asset.sys.id === '6M9cqMoRwwyoTrGWdpgyFl') {
-                            const imageUrl = 'https:' + asset.fields.file.url
-                            return (
-                                <Image src={imageUrl} width={144} height={144} alt='category4' key={asset.sys.id}>
-                                </Image>
-                            )
-                        }
+                    if (asset.sys.id === '6M9cqMoRwwyoTrGWdpgyFl') {
+                        const imageUrl = 'https:' + asset.fields.file.url
+                        return (
+                            <Image src={imageUrl} width={144} height={144} alt='category4' key={asset.sys.id}>
+                            </Image>
+                        )
                     }
-                    )
-                    }
-                    {contentfulData && contentfulData?.items?.map((item) => {
-                        // console.log(item)
-                        // console.log(item?.fields?.title)
-                        if (item.sys.id === 'NmWKEav8HzjwCBl0Z4qQI') {
-                            return (
-                                <p key={item.sys.id}>{item?.fields?.title}</p>
-                            )
-                        }
+                }
+                )
+                }
+                {renderTitle('NmWKEav8HzjwCBl0Z4qQI')}
 
-                    })}
-
-                </div>
+            </div>
 
 
-                <div className={styles.cards}>
+            <div className={styles.cards}>
                 {contentfulData && contentfulData?.includes?.Asset?.map((asset) => {
-                        if (asset.sys.id === '3cv9gZ8URV4IiI6lpmHKBE') {
-                            const imageUrl = 'https:' + asset.fields.file.url
-                            return (
-                                <Image src={imageUrl} width={144} height={144} alt='category5' key={asset.sys.id}>
-                                </Image>
-                            )
-                        }
+                    if (asset.sys.id === '3cv9gZ8URV4IiI6lpmHKBE') {
+                        const imageUrl = 'https:' + asset.fields.file.url
+                        return (
+                            <Image src={imageUrl} width={144} height={144} alt='category5' key={asset.sys.id}>
+                            </Image>
+                        )
                     }
-                    )
-                    }
-                    {contentfulData && contentfulData?.items?.map((item) => {
-                        // console.log(item)
-                        // console.log(item?.fields?.title)
-                        if (item.sys.id === '4jMnuJn55XLgI5uK6zJVQT') {
-                            return (
-                                <p key={item.sys.id}>{item?.fields?.title}</p>
-                            )
-                        }
+                }
+                )
+                }
+                {renderTitle('4jMnuJn55XLgI5uK6zJVQT')}
 
-                    })}
-
-
-                </div>
-                <div className={styles.cards}>
+            </div>
+            <div className={styles.cards}>
                 {contentfulData && contentfulData?.includes?.Asset?.map((asset) => {
-                        if (asset.sys.id === '1thaKzAhUAhdU3jf2XzW7w') {
-                            const imageUrl = 'https:' + asset.fields.file.url
-                            return (
-                                <Image src={imageUrl} width={144} height={144} alt='category6' key={asset.sys.id}>
-                                </Image>
-                            )
-                        }
+                    if (asset.sys.id === '1thaKzAhUAhdU3jf2XzW7w') {
+                        const imageUrl = 'https:' + asset.fields.file.url
+                        return (
+                            <Image src={imageUrl} width={144} height={144} alt='category6' key={asset.sys.id}>
+                            </Image>
+                        )
                     }
-                    )
-                    }
-                    {contentfulData && contentfulData?.items?.map((item) => {
-                        // console.log(item)
-                        // console.log(item?.fields?.title)
-                        if (item.sys.id === '4dxFYquMLEG3UQvDiCKS8A') {
-                            return (
-                                <p key={item.sys.id}>{item?.fields?.title}</p>
-                            )
-                        }
-
-                    })}
-                </div>
-                <div className={styles.cards}>
+                }
+                )
+                }
+                {renderTitle('4dxFYquMLEG3UQvDiCKS8A')}
+            </div>
+            <div className={styles.cards}>
                 {contentfulData && contentfulData?.includes?.Asset?.map((asset) => {
-                        if (asset.sys.id === '4mKPrdHCD0HCi93hgvar6G') {
-                            const imageUrl = 'https:' + asset.fields.file.url
-                            return (
-                                <Image src={imageUrl} width={144} height={144} alt='category7' key={asset.sys.id}>
-                                </Image>
-                            )
-                        }
+                    if (asset.sys.id === '4mKPrdHCD0HCi93hgvar6G') {
+                        const imageUrl = 'https:' + asset.fields.file.url
+                        return (
+                            <Image src={imageUrl} width={144} height={144} alt='category7' key={asset.sys.id}>
+                            </Image>
+                        )
                     }
-                    )
-                    }
+                }
+                )
+                }
 
-                    {contentfulData && contentfulData?.items?.map((item) => {
-                        // console.log(item)
-                        // console.log(item?.fields?.title)
-                        if (item.sys.id === '5ikGRgtNGXtwR2nYYN5mXl') {
-                            return (
-                                <p key={item.sys.id}>{item?.fields?.title}</p>
-                            )
-                        }
-
-                    })
-                    }
-                </div>
-                <div className={styles.cards}>
-                    <iframe width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                </div>
+                {renderTitle('5ikGRgtNGXtwR2nYYN5mXl')}
+            </div>
+            <div className={styles.cards}>
+                <iframe width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
         </div>
+    </div>
 
-    </>)
+</>)
 }
 
 export default Categories
