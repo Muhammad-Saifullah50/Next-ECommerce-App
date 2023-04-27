@@ -27,7 +27,7 @@ const Categories = () => {
 
             <div className={styles.cardgrid}>
                 <div className={styles.cards}>
-                    <Image src="/images/category1.png" width={144} height={144}>
+                    <Image src="/images/category1.png" width={144} height={144} alt='category1'>
                     </Image>
 
 
@@ -36,7 +36,7 @@ const Categories = () => {
 
                         if (item.sys.id === '4n8Vxvh6FsM216olF1R6hC') {
                             return (
-                                <p>{item?.fields?.title}</p>
+                                <p key={item.sys.id}>{item?.fields?.title}</p>
                             )
                         }
 
@@ -45,7 +45,7 @@ const Categories = () => {
                 </div>
 
                 <div className={styles.cards}>
-                    <Image src="/images/category2.png" width={144} height={144}>
+                    <Image src="/images/category2.png" width={144} height={144} alt='category 2'>
 
                     </Image>
 
@@ -53,7 +53,7 @@ const Categories = () => {
                         console.log(item?.fields?.title)
                         if (item.sys.id === '6cYafFjpZfFxLQNjCpTjfH') {
                             return (
-                                <p>{item?.fields?.title}</p>
+                                <p key={item.sys.id}>{item?.fields?.title}</p>
                             )
                         }
 
@@ -62,7 +62,7 @@ const Categories = () => {
                 </div>
 
                 <div className={styles.cards}>
-                    <Image src="/images/toolbox.png" width={144} height={144}>
+                    <Image src="/images/toolbox.png" width={144} height={144} alt='category 3'>
                     </Image>
 
                     {contentfulData && contentfulData?.items?.map((item) => {
@@ -70,7 +70,7 @@ const Categories = () => {
                         console.log(item?.fields?.title)
                         if (item.sys.id === '3KTDuJ3m402V1aTV2uSfzG') {
                             return (
-                                <p>{item?.fields?.title}</p>
+                                <p key={item.sys.id}>{item?.fields?.title}</p>
                             )
                         }
                     })}
@@ -78,7 +78,7 @@ const Categories = () => {
                 </div>
                 <div className={styles.cards}>
 
-                    <Image src="/images/category4.png" width={144} height={144}>
+                    <Image src="/images/category4.png" width={144} height={144} alt='category 4'>
 
                     </Image>
 
@@ -87,7 +87,7 @@ const Categories = () => {
                         console.log(item?.fields?.title)
                         if (item.sys.id === 'NmWKEav8HzjwCBl0Z4qQI') {
                             return (
-                                <p>{item?.fields?.title}</p>
+                                <p key={item.sys.id}>{item?.fields?.title}</p>
                             )
                         }
 
@@ -97,7 +97,7 @@ const Categories = () => {
 
 
                 <div className={styles.cards}>
-                    <Image src="/images/category3.png" width={144} height={144}>
+                    <Image src="/images/category3.png" width={144} height={144} alt='category 5'>
 
                     </Image>
                     {contentfulData && contentfulData?.items?.map((item) => {
@@ -105,7 +105,7 @@ const Categories = () => {
                         console.log(item?.fields?.title)
                         if (item.sys.id === '4jMnuJn55XLgI5uK6zJVQT') {
                             return (
-                                <p>{item?.fields?.title}</p>
+                                <p key={item.sys.id}>{item?.fields?.title}</p>
                             )
                         }
 
@@ -114,7 +114,7 @@ const Categories = () => {
 
                 </div>
                 <div className={styles.cards}>
-                    <Image src="/images/category6.png" width={144} height={144}>
+                    <Image src="/images/category6.png" width={144} height={144} alt='category 5'>
 
                     </Image>
                     {contentfulData && contentfulData?.items?.map((item) => {
@@ -122,14 +122,14 @@ const Categories = () => {
                         console.log(item?.fields?.title)
                         if (item.sys.id === '4dxFYquMLEG3UQvDiCKS8A') {
                             return (
-                                <p>{item?.fields?.title}</p>
+                                <p key={item.sys.id}>{item?.fields?.title}</p>
                             )
                         }
 
                     })}
                 </div>
                 <div className={styles.cards}>
-                    <Image src="/images/category5.png" width={144} height={144}>
+                    <Image src="/images/category5.png" width={144} height={144} alt='category 6'>
 
                     </Image>
 
@@ -138,7 +138,7 @@ const Categories = () => {
                         console.log(item?.fields?.title)
                         if (item.sys.id === '5ikGRgtNGXtwR2nYYN5mXl') {
                             return (
-                                <p>{item?.fields?.title}</p>
+                                <p key={item.sys.id}>{item?.fields?.title}</p>
                             )
                         }
 

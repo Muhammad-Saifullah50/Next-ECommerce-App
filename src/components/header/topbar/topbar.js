@@ -6,13 +6,13 @@ const topbar = () => {
        
         <div className={styles.topbar}>
             <div className={styles.phno}>
-                <Image className={styles.phone} src="/images/phone.png" width={15} height={15}>
+                <Image className={styles.phone} src="/images/phone.png" width={15} height={15} alt="phone">
                 </Image>
                 &nbsp;+1234567890
 
             </div>
             <div className={styles.timing}>
-                <Image className={styles.clock} src="/images/clock.jpg" width={15} height={15}>
+                <Image className={styles.clock} src="/images/clock.jpg" width={15} height={15} alt='clock'>
 
                 </Image>
                 &nbsp; Mon - Sun 8:00 am - 5:00 pm
