@@ -35,7 +35,7 @@ const Categories = () => {
                         if (asset.sys.id === '29fPL5QFfyWPxCAZ0pkiQz') {
                             const imageUrl = 'https:' + asset.fields.file.url
                             return (
-                                <Image src={imageUrl} width={144} height={144} alt='category1'>
+                                <Image src={imageUrl} width={144} height={144} alt='category1' key={asset.sys.id}>
                                 </Image>
                             )
                         }
@@ -63,7 +63,7 @@ const Categories = () => {
                         if (asset.sys.id === 'Qybq2kbrlxWZ7FcK0WUPd') {
                             const imageUrl = 'https:' + asset.fields.file.url
                             return (
-                                <Image src={imageUrl} width={144} height={144} alt='category2'>
+                                <Image src={imageUrl} width={144} height={144} alt='category2' key={asset.sys.id}>
                                 </Image>
                             )
                         }
@@ -89,7 +89,7 @@ const Categories = () => {
                         if (asset.sys.id === '28uDfdCuQxxxuzCMwiXQWT') {
                             const imageUrl = 'https:' + asset.fields.file.url
                             return (
-                                <Image src={imageUrl} width={144} height={144} alt='category3'>
+                                <Image src={imageUrl} width={144} height={144} alt='category3' key={asset.sys.id}>
                                 </Image>
                             )
                         }
@@ -114,7 +114,7 @@ const Categories = () => {
                         if (asset.sys.id === '6M9cqMoRwwyoTrGWdpgyFl') {
                             const imageUrl = 'https:' + asset.fields.file.url
                             return (
-                                <Image src={imageUrl} width={144} height={144} alt='category4'>
+                                <Image src={imageUrl} width={144} height={144} alt='category4' key={asset.sys.id}>
                                 </Image>
                             )
                         }
@@ -140,7 +140,7 @@ const Categories = () => {
                         if (asset.sys.id === '3cv9gZ8URV4IiI6lpmHKBE') {
                             const imageUrl = 'https:' + asset.fields.file.url
                             return (
-                                <Image src={imageUrl} width={144} height={144} alt='category5'>
+                                <Image src={imageUrl} width={144} height={144} alt='category5' key={asset.sys.id}>
                                 </Image>
                             )
                         }
@@ -165,7 +165,7 @@ const Categories = () => {
                         if (asset.sys.id === '1thaKzAhUAhdU3jf2XzW7w') {
                             const imageUrl = 'https:' + asset.fields.file.url
                             return (
-                                <Image src={imageUrl} width={144} height={144} alt='category6'>
+                                <Image src={imageUrl} width={144} height={144} alt='category6' key={asset.sys.id}>
                                 </Image>
                             )
                         }
@@ -188,7 +188,7 @@ const Categories = () => {
                         if (asset.sys.id === '4mKPrdHCD0HCi93hgvar6G') {
                             const imageUrl = 'https:' + asset.fields.file.url
                             return (
-                                <Image src={imageUrl} width={144} height={144} alt='category7'>
+                                <Image src={imageUrl} width={144} height={144} alt='category7' key={asset.sys.id}>
                                 </Image>
                             )
                         }
