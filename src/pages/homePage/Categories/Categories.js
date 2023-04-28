@@ -1,28 +1,13 @@
 import styles from '@/styles/categories.module.css'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 
-const Categories = () => {
+const Categories = (props) => {
 
-    const [contentfulData, setContentfulData] = useState({});
-
-    const apiData = async () => {
-        const response = await fetch(`https://cdn.contentful.com/spaces/25h38m57z8zs/entries?access_token=0G9TBJln4K0otkAUEV1f2uT90L0R5kWG6qFoNvmkiT4`);
-
-        const result = await response.json()
-        setContentfulData(result)
-        console.log(result)
-    }
-    // use effect takes two parameters, a callback function and an emopty array
-
-    useEffect(() => {
-        apiData();
-    }, [])
-
+    
     // this function will render title of our categories.
 
     const renderTitle = (id) => {
-        const item = contentfulData?.items?.find((item) => item.sys.id === id)
+        const item = props.contentfulData?.items?.find((item) => item.sys.id === id)
         return item ? <p key={item.sys.id}>{item?.fields?.title}</p> : null
 
     }
@@ -30,11 +15,10 @@ const Categories = () => {
     // this function will render the image of our category
 
     const renderImage = (id, alt) => {
-        const asset = contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
-        console.log(asset)
+        const asset = props.contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
+        // console.log(asset)
         if (asset) {
             const imageUrl = 'https:' + asset.fields.file.url
-            console.log(imageUrl)
 
             return <Image src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id} />
 
