@@ -1,7 +1,7 @@
 import Topbar from "./topbar/topbar"
 import Lowerbar from "./lowerbar/lowerbar"
 import Navbar from "./navbar/navbar"
-const header = () => {
+const Header = () => {
 
     return (
         <>

@@ -5,7 +5,7 @@ import Brands from "./Brands/Brands"
 import Categories from "./Categories/Categories"
 import FPItems from "./FPItems/FPItems"
 
-const homePage = () => {
+const HomePage = () => {
 
     const [contentfulData, setContentfulData] = useState({});
 
@@ -33,4 +33,4 @@ const homePage = () => {
     )
 }
 
-export default homePage
+export default HomePage
