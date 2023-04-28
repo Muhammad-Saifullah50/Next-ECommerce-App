@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Header from "@/components/header/header"
+import Header from "@/components/header/Header"
 import Carousel from "./Carousel/Carousel"
 import Brands from "./Brands/Brands"
 import Categories from "./Categories/Categories"
