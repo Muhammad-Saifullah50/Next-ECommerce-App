@@ -1,0 +1,19 @@
+.bottombar {
+    border: 2px solid red;
+    background-color: black;
+    color: #f0dd0c;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    border: 2px solid green;
+}
+.links{
+    border: 2px solid green;
+}
+.categories{
+    border: 2px solid green;
+}
+.address{
+    border: 2px solid green;
+}

@@ -4,6 +4,7 @@ import Carousel from "./Carousel/Carousel"
 import Brands from "./Brands/Brands"
 import Categories from "./Categories/Categories"
 import FPItems from "./FPItems/FPItems"
+import Footer from '@/components/Footer/Footer'
 
 const HomePage = () => {
 
@@ -29,6 +30,7 @@ const HomePage = () => {
             <Brands />
             <Categories contentfulData={contentfulData} />
             <FPItems contentfulData={contentfulData} />
+            <Footer />
         </>
     )
 }

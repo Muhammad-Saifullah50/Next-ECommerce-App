@@ -1,0 +1,38 @@
+.newsletter {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0vh auto;
+    background-color: #f0dd0c;
+    color: black;
+    padding: 2vh 5vh;
+    padding-left: 5vw;
+    border-radius: 10px;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.email input {
+    text-align: center;
+    width: 16vw;
+
+}
+
+.agreement {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+
+}
+.btn{
+    height:6vh;
+    width: 12vw;
+    background-color: black;
+    color: #f0dd0c;
+    margin: 1vh 12vh;
+}
