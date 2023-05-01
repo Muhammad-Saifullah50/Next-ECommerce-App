@@ -7,7 +7,7 @@ const Bottombar = () => {
             <div className={styles.text}>
             <Image src="/images/logo1.png" height={100} width={150} alt='logo'></Image> 
             <figcaption>Guranteed Tough</figcaption>   
-            <p>Dewalt Product Company is formwed with plant and offices in the leola, Pennsylvania. Thier product is a n electric universal woodworking machine known as the 'DEWALT Wonder Worker' . </p>
+            <p>Dewalt Product Company is formwed with plant and offices in the leola, Pennsylvania. Thier product is a n electric universal woodworking machine known as the DEWALT Wonder Worker.</p>
             <p>DEWALT Products Co. moves to a new, and for those days, an oustandingly modern plant. </p>
             </div>
             <div className={styles.categories}>
