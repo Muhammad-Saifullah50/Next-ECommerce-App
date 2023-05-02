@@ -4,11 +4,14 @@
     justify-content: space-between;
     width: 95%;
     margin: 0vh auto;
-    background-color: #f0dd0c;
+    background-color: #e3d324;
     color: black;
     padding: 2vh 5vh;
     padding-left: 5vw;
     border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    top: 6vh;
 }
 
 .email {
@@ -20,6 +23,7 @@
 .email input {
     text-align: center;
     width: 16vw;
+    border-radius: 3px;
 
 }
 
