@@ -1,16 +1,21 @@
 import styles from '@/styles/fpitems.module.css'
 import Image from 'next/image'
+import { useContext } from "react"
+import dataContext from "@/context/dataContext"
 
-const FPItems = (props) => {
+
+const FPItems = () => {
+
+const contentfulData = useContext(dataContext)
 
     const renderTitle = (id) => {
-        const item = props.contentfulData?.items?.find(item => item.sys.id === id)
+        const item = contentfulData?.items?.find(item => item.sys.id === id)
         return item ? <h6 key={item.sys.id}>{item?.fields?.title}</h6> : null
     }
 
     const renderImage = (id, alt) => {
 
-        const asset = props.contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
+        const asset = contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
 
         if (asset) {
             const imageUrl = 'https:' + asset.fields.file.url
@@ -21,7 +26,7 @@ const FPItems = (props) => {
     }
 
     const renderPrice = (id) => {
-        const item = props.contentfulData?.items?.find(item => item.sys.id === id)
+        const item = contentfulData?.items?.find(item => item.sys.id === id)
         return item ? <p key={item.sys.id}>{item?.fields?.price}</p> : null
     }
 

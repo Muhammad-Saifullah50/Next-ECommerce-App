@@ -1,13 +1,17 @@
 import styles from '@/styles/categories.module.css'
 import Image from 'next/image'
+import { useContext } from "react"
+import dataContext from "@/context/dataContext"
 
-const Categories = (props) => {
+const Categories = () => {
 
-    
+    const contentfulData = useContext(dataContext)
+
+
     // this function will render title of our categories.
 
     const renderTitle = (id) => {
-        const item = props.contentfulData?.items?.find((item) => item.sys.id === id)
+        const item = contentfulData?.items?.find((item) => item.sys.id === id)
         return item ? <p key={item.sys.id}>{item?.fields?.title}</p> : null
 
     }
@@ -15,7 +19,7 @@ const Categories = (props) => {
     // this function will render the image of our category
 
     const renderImage = (id, alt) => {
-        const asset = props.contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
+        const asset = contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
         // console.log(asset)
         if (asset) {
             const imageUrl = 'https:' + asset.fields.file.url
@@ -61,17 +65,17 @@ const Categories = (props) => {
                     {renderTitle('NmWKEav8HzjwCBl0Z4qQI')}
 
                 </div>
-                
+
                 <div className={styles.cards}>
 
                     {renderImage('3cv9gZ8URV4IiI6lpmHKBE', 'category5')}
-                    
+
                     {renderTitle('4jMnuJn55XLgI5uK6zJVQT')}
 
                 </div>
                 <div className={styles.cards}>
                     {renderImage('1thaKzAhUAhdU3jf2XzW7w', 'category6')}
-                   
+
                     {renderTitle('4dxFYquMLEG3UQvDiCKS8A')}
                 </div>
 
