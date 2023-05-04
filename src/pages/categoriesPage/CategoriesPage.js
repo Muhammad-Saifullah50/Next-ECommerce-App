@@ -1,10 +1,10 @@
 import Header from "@/components/header/Header"
-import Banner from "./Banner/Banner"
+import CategoryPageItems from "./Banner/CategoryPageItems"
 const CategoriesPage = () => {
 
-    return(<>
-    <Header />
-    <Banner />
+    return (<>
+        <Header />
+        <CategoryPageItems />
 
     </>)
 }

@@ -1,5 +1,5 @@
-import styles from '@/styles/banner.module.css'
-const Banner = () => {
+import styles from '@/styles/categorypage-items.module.css'
+const CategoryPageItems = () => {
 
     return (<>
         <div className={styles.banner}>
@@ -32,9 +32,21 @@ const Banner = () => {
                 <div className={styles.cards}>
                     fddfdf
                 </div>
+                <div className={styles.cards}>
+                    fddfdf
+                </div>
+                <div className={styles.cards}>
+                    fddfdf
+                </div>
+                <div className={styles.cards}>
+                    fddfdf
+                </div>
+                <div className={styles.cards}>
+                    fddfdf
+                </div>
             </div>
         </div>
     </>)
 }
 
-export default Banner
+export default CategoryPageItems
