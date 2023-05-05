@@ -1,4 +1,4 @@
-.banner{
+.banner {
     background-image: url("/images/black.jpg");
     background-repeat: no-repeat;
     width: 100%;
@@ -8,16 +8,19 @@
     align-items: center;
 
 }
-.banner h2{
+
+.banner h2 {
     color: white;
     font-size: 2.7rem;
 
 }
+
 .categories {
     /* border: 2px solid red; */
     width: 100%;
     display: flex;
 }
+
 .cards {
     /* border: 1px solid black; */
     display: flex;
@@ -31,10 +34,11 @@
     margin-top: 5vh;
 
 }
+
 .cardgrid {
     display: grid;
-    grid-template-columns: 15vh 15vh 15vh ;
-    grid-template-rows: 15vh 15vh 15vh;
+    grid-template-columns: 15vh 15vh 15vh;
+    grid-template-rows: 15vh 15vh 15vh 15vh;
     column-gap: 39vh;
     row-gap: 20vh;
     margin: auto auto;
@@ -43,6 +47,6 @@
     height: 65vh;
     justify-content: start;
     margin-left: 5.5vh;
-
+    margin-bottom: 75vh;
 
 }

@@ -10,7 +10,7 @@ const Categories = () => {
 
     // this function will render title of our categories.
 
-    const renderTitle = (id) => {
+     const renderTitle = (id) => {
         const item = contentfulData?.items?.find((item) => item.sys.id === id)
         return item ? <p key={item.sys.id}>{item?.fields?.title}</p> : null
 
@@ -20,7 +20,7 @@ const Categories = () => {
 
     const renderImage = (id, alt) => {
         const asset = contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
-        // console.log(asset)
+
         if (asset) {
             const imageUrl = 'https:' + asset.fields.file.url
 

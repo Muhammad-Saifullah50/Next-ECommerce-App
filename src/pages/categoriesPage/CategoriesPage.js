@@ -1,11 +1,17 @@
 import Header from "@/components/header/Header"
-import CategoryPageItems from "./Banner/CategoryPageItems"
+import CategoryPageItems from "./CategoryPageItems/CategoryPageItems"
+import ApiDataState from "@/context/dataState"
+import Footer from "@/components/Footer/Footer"
 const CategoriesPage = () => {
 
     return (<>
         <Header />
-        <CategoryPageItems />
 
+        <ApiDataState>
+            <CategoryPageItems />
+        </ApiDataState>
+
+        <Footer />
     </>)
 }
 export default CategoriesPage
