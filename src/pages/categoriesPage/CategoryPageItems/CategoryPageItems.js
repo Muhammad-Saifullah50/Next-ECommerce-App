@@ -13,7 +13,7 @@ const CategoryPageItems = () => {
     const renderTitle = (id) => {
         const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-        return item ? <p key={item.sys.id}>{item?.fields?.title}</p> : null
+        return item ? <h3 key={item.sys.id}>{item?.fields?.title}</h3> : null
 
     }
 
