@@ -3,6 +3,7 @@ import Header from '@/components/header/Header'
 import { useContext } from 'react'
 import dataContext from '@/context/dataContext'
 import ApiDataState from '@/context/dataState'
+import Image from 'next/image'
 
 const BandSawsPage = () => {
 
