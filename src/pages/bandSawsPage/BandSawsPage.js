@@ -36,12 +36,12 @@ const BandSawsPage = () => {
     return (
         <ApiDataState>
             <>
+
                 <Header />
-
-
                 <div className={styles.banner}>
                     <h2> Dewalt Heavy Duty Band Saws </h2>
                 </div>
+
                 <div className={styles.itembox}>
                     <div className={styles.items}>
 
