@@ -31,6 +31,18 @@ const Items = () => {
         }
 
     }
+    const renderPrice = (id) => {
+        const item = contentfulData?.items?.find((item) => item.sys.id === id)
+
+        return item ? <p key={item.sys.id}>{item?.fields?.price}</p> : null
+
+    }
+    const renderRating = (id) => {
+        const item = contentfulData?.items?.find((item) => item.sys.id === id)
+
+        return item ? <p key={item.sys.id}>{item?.fields?.rating}</p> : null
+
+    }
 
     return (
         <>
@@ -38,14 +50,20 @@ const Items = () => {
                 <div className={styles.items}>
                     {renderTitle('7sceAfoiIoR9lWTij4uubi')}
                     {renderImage('3yVcW9wxP135N934utsvAo')}
+                    {renderPrice('7sceAfoiIoR9lWTij4uubi')}
+                    {renderRating('7sceAfoiIoR9lWTij4uubi')}
                 </div>
                 <div className={styles.items}>
                     {renderTitle('TmzGBkOfmuQ7dAUhQR3Rj')}
                     {renderImage('tCrbRiWSIkuQQcSKqIFPf')}
+                    {renderPrice('TmzGBkOfmuQ7dAUhQR3Rj')}
+                    {renderRating('TmzGBkOfmuQ7dAUhQR3Rj')}
                 </div>
                 <div className={styles.items}>
                     {renderTitle('3Popbf2nkOxtmAALlR4qPm')}
-                    {renderImage('3yVcW9wxP135N934utsvAo')}
+                    {renderImage('4thrwDMdiKLXzVYfSGLHSV')}
+                    {renderPrice('3Popbf2nkOxtmAALlR4qPm')}
+                    {renderRating('3Popbf2nkOxtmAALlR4qPm')}
                 </div>
             </div>
         </>
