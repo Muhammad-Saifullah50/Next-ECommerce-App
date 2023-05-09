@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 // this function will render title of our categories.
 
-const renderTitle = (id, contentfulData) => {
+export const renderTitle = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
     return item ? <h3 key={item.sys.id}>{item?.fields?.title}</h3> : null
@@ -16,7 +16,7 @@ const renderTitle = (id, contentfulData) => {
 
 // this function will render image of our categories.
 
-const renderImage = (id, alt, contentfulData) => {
+export const renderImage = (id, alt, contentfulData) => {
     const asset = contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
 
     if (asset) {
@@ -27,13 +27,13 @@ const renderImage = (id, alt, contentfulData) => {
     }
 
 }
-const renderPrice = (id, contentfulData) => {
+export const renderPrice = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
     return item ? <p key={item.sys.id}>{item?.fields?.price}</p> : null
 
 }
-const renderRating = (id, contentfulData) => {
+export const renderRating = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
     return item ? <p key={item.sys.id}>{item?.fields?.rating}</p> : null

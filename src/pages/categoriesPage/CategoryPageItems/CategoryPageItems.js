@@ -59,7 +59,7 @@ const CategoryPageItems = () => {
                     {renderTitle('2FeEPy4Bwc4Rlg2WfH5Vum')}
                     {renderImage('6ccFQQznaehaIdvdkr8ooX', 'oscillatory grinder')}
                     {renderPriceRange('2FeEPy4Bwc4Rlg2WfH5Vum')}
-                    <Link href=''><button>Explore</button></Link>
+                    <Link href='/oscillatoryGrinderPage/OscillatoryGrinderPage'><button>Explore</button></Link>
 
                 </div>
                 <div className={styles.cards}>
