@@ -62,3 +62,16 @@
     margin-bottom: 300vh;
 
 }
+.btn{
+    color: black;
+    background-color: #F9E722;
+    width: 7vw;
+    height: 4vh;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn:hover{
+    color: #F9E722;
+    background-color: black;
+}

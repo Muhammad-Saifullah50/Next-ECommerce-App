@@ -1,4 +1,4 @@
-import styles from '@/styles/band-saws-items.module.css'
+import styles from '@/styles/global-items.module.css'
 import { useContext } from 'react'
 import dataContext from '@/context/dataContext'
 import Image from 'next/image'

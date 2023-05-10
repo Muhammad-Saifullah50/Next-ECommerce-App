@@ -1,7 +1,7 @@
 import Header from "@/components/header/Header"
 import Items from "./Items/Items"
 import ApiDataState from "@/context/dataState"
-import styles from '@/styles/lightsawspage.module.css'
+import styles from '@/styles/global-category-pages.module.css'
 
 const LightSawsPage = () => {
 
