@@ -8,33 +8,29 @@ const Items = () => {
     console.log(contentfulData)
     return (<>
         <div className={styles.itembox}>
-
             <div className={styles.items}>
-
+                {renderTitle('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
+                {renderImage()}
+                {renderPrice('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
+                {renderRating('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
             </div>
             <div className={styles.items}>
-                {renderTitle('3u6K7kVh5sPkGN2hKvwSi8')}
+            {renderTitle('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
                 {renderImage()}
-                {renderPrice('3u6K7kVh5sPkGN2hKvwSi8')}
-                {renderRating('3u6K7kVh5sPkGN2hKvwSi8')}
+                {renderPrice('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
+                {renderRating('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
             </div>
             <div className={styles.items}>
-            {renderTitle('6rQjZ1rSswD57AUiTVyOlg')}
+            {renderTitle('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
                 {renderImage()}
-                {renderPrice('6rQjZ1rSswD57AUiTVyOlg')}
-                {renderRating('6rQjZ1rSswD57AUiTVyOlg')}
+                {renderPrice('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
+                {renderRating('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
             </div>
             <div className={styles.items}>
-            {renderTitle('4LSZZkLcgcwDmZeSTkvIld')}
+            {renderTitle('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
                 {renderImage()}
-                {renderPrice('4LSZZkLcgcwDmZeSTkvIld')}
-                {renderRating('4LSZZkLcgcwDmZeSTkvIld')}
-            </div>
-            <div className={styles.items}>
-            {renderTitle('1WcsUOH8ngdpUZU7u0CqQB')}
-                {renderImage()}
-                {renderPrice('1WcsUOH8ngdpUZU7u0CqQB')}
-                {renderRating('1WcsUOH8ngdpUZU7u0CqQB')}
+                {renderPrice('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
+                {renderRating('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
             </div>
         </div>
     </>)
