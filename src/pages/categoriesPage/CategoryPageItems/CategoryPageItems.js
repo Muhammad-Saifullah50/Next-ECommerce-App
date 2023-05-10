@@ -66,7 +66,7 @@ const CategoryPageItems = () => {
                     {renderTitle('3HsYBYwZOvs144Oolb1UNh')}
                     {renderImage('6vMNCHJuh4JgYhmIYkFWZQ', 'light saw')}
                     {renderPriceRange('3HsYBYwZOvs144Oolb1UNh')}
-                    <Link href=''><button>Explore</button></Link>
+                    <Link href='/lightSawsPage/LightSawsPage'><button>Explore</button></Link>
 
                 </div>
                 <div className={styles.cards}>
