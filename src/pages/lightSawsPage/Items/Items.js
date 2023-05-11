@@ -9,30 +9,92 @@ const Items = () => {
     return (<>
         <div className={styles.itembox}>
             <div className={styles.items}>
-                {renderTitle('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
-                {renderImage()}
-                {renderPrice('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
-                {renderRating('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
+                <div className={styles.heading}>
+                    {renderTitle('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
+
+                    <div className={styles.rateprice}>
+
+                        {renderPrice('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
+                        {renderRating('3u6K7kVh5sPkGN2hKvwSi8', contentfulData)}
+
+                    </div>
+
+                    <button className={styles.button}>Read More</button>
+
+                </div>
+
+                <div className={styles.image}>
+                    {renderImage('', 'alt', contentfulData)}
+                </div>
+
             </div>
             <div className={styles.items}>
-            {renderTitle('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
-                {renderImage()}
-                {renderPrice('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
-                {renderRating('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
-            </div>
-            <div className={styles.items}>
-            {renderTitle('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
-                {renderImage()}
-                {renderPrice('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
-                {renderRating('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
-            </div>
-            <div className={styles.items}>
-            {renderTitle('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
-                {renderImage()}
-                {renderPrice('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
-                {renderRating('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
-            </div>
+                    <div className={styles.heading}>
+                        {renderTitle('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
+
+                        <div className={styles.rateprice}>
+
+                            {renderPrice('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
+                            {renderRating('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
+
+                        </div>
+                        
+                        <button className={styles.button}>Read More</button>
+
+                    </div>
+
+                    <div className={styles.image}>
+                        {renderImage('', 'alt', contentfulData)}
+                    </div>
+
+                </div>
+                <div className={styles.items}>
+                    <div className={styles.heading}>
+                        {renderTitle('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
+
+                        <div className={styles.rateprice}>
+
+                            {renderPrice('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
+                            {renderRating('4LSZZkLcgcwDmZeSTkvIld', contentfulData)}
+
+                        </div>
+                        
+                        <button className={styles.button}>Read More</button>
+
+                    </div>
+
+                    <div className={styles.image}>
+                        {renderImage('', 'alt', contentfulData)}
+                    </div>
+
+                </div>
+                <div className={styles.items}>
+                    <div className={styles.heading}>
+                        {renderTitle('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
+
+                        <div className={styles.rateprice}>
+
+                            {renderPrice('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
+                            {renderRating('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
+
+                        </div>
+                        
+                        <button className={styles.button}>Read More</button>
+
+                    </div>
+
+                    <div className={styles.image}>
+                        {renderImage('', 'alt', contentfulData)}
+                    </div>
+
+                </div>
         </div>
     </>)
 }
 export default Items
+
+
+
+
+
+
