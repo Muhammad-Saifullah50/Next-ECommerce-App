@@ -10,12 +10,12 @@ const Items = () => {
         <div className={styles.itembox}>
         <div className={styles.items}>
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('67mPkt3Wjgo1TynGEDfNVc', contentfulData)}
 
                         <div className={styles.rateprice}>
 
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
+                            {renderPrice('67mPkt3Wjgo1TynGEDfNVc', contentfulData)}
+                            {renderRating('67mPkt3Wjgo1TynGEDfNVc', contentfulData)}
 
                         </div>
                         
@@ -24,18 +24,18 @@ const Items = () => {
                     </div>
 
                     <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
+                        {renderImage('29fPL5QFfyWPxCAZ0pkiQz', 'alt', contentfulData)}
                     </div>
 
                 </div>
                 <div className={styles.items}>
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('6ighvhahV902BZKeG2Nu03', contentfulData)}
 
                         <div className={styles.rateprice}>
 
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
+                            {renderPrice('6ighvhahV902BZKeG2Nu03', contentfulData)}
+                            {renderRating('6ighvhahV902BZKeG2Nu03', contentfulData)}
 
                         </div>
                         
@@ -44,18 +44,18 @@ const Items = () => {
                     </div>
 
                     <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
+                        {renderImage('4lccyvzqkycqNFA9lQV87p', 'alt', contentfulData)}
                     </div>
 
                 </div>
                 <div className={styles.items}>
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('4VzIsrlOhwM9FOkhTcjzPh', contentfulData)}
 
                         <div className={styles.rateprice}>
 
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
+                            {renderPrice('4VzIsrlOhwM9FOkhTcjzPh', contentfulData)}
+                            {renderRating('4VzIsrlOhwM9FOkhTcjzPh', contentfulData)}
 
                         </div>
                         
@@ -64,30 +64,11 @@ const Items = () => {
                     </div>
 
                     <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
+                        {renderImage('MH5bzjSROfpwPKAZou9Jt', 'alt', contentfulData)}
                     </div>
 
                 </div>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
-
-                        <div className={styles.rateprice}>
-
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
-
-                        </div>
-                        
-                        <button className={styles.button}>Read More</button>
-
-                    </div>
-
-                    <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
-                    </div>
-
-                </div>
+               
         </div>
     </>)
 }

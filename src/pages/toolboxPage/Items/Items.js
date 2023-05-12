@@ -10,12 +10,12 @@ const Items = () => {
         <div className={styles.itembox}>
         <div className={styles.items}>
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('6ignZvImEqa5T9fq3d6bT5', contentfulData)}
 
                         <div className={styles.rateprice}>
 
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
+                            {renderPrice('6ignZvImEqa5T9fq3d6bT5', contentfulData)}
+                            {renderRating('6ignZvImEqa5T9fq3d6bT5', contentfulData)}
 
                         </div>
                         
@@ -24,18 +24,19 @@ const Items = () => {
                     </div>
 
                     <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
+                        {renderImage('28uDfdCuQxxxuzCMwiXQWT', 'alt', contentfulData)}
                     </div>
 
                 </div>
+                
                 <div className={styles.items}>
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('1YfSGDjWL7AKorlePG62GM', contentfulData)}
 
                         <div className={styles.rateprice}>
 
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
+                            {renderPrice('1YfSGDjWL7AKorlePG62GM', contentfulData)}
+                            {renderRating('1YfSGDjWL7AKorlePG62GM', contentfulData)}
 
                         </div>
                         
@@ -44,47 +45,7 @@ const Items = () => {
                     </div>
 
                     <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
-                    </div>
-
-                </div>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
-
-                        <div className={styles.rateprice}>
-
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
-
-                        </div>
-                        
-                        <button className={styles.button}>Read More</button>
-
-                    </div>
-
-                    <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
-                    </div>
-
-                </div>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
-
-                        <div className={styles.rateprice}>
-
-                            {renderPrice('', contentfulData)}
-                            {renderRating('', contentfulData)}
-
-                        </div>
-                        
-                        <button className={styles.button}>Read More</button>
-
-                    </div>
-
-                    <div className={styles.image}>
-                        {renderImage('', 'alt', contentfulData)}
+                        {renderImage('6Vu4RfvN2ea0L2rJfjK5vm', 'alt', contentfulData)}
                     </div>
 
                 </div>
