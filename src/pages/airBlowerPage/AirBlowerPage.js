@@ -2,6 +2,7 @@ import styles from '@/styles/global-category-pages.module.css'
 import ApiDataState from '@/context/dataState'
 import Items from './Items/Items'
 import Header from '@/components/header/Header'
+import Footer from '@/components/Footer/Footer'
 const AirBlowerPage = () => {
 
     return (<>
@@ -12,7 +13,7 @@ const AirBlowerPage = () => {
         <ApiDataState>
             <Items />
         </ApiDataState>
-
+        <Footer />
     </>)
 }
 

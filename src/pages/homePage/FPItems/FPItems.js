@@ -2,28 +2,14 @@ import styles from '@/styles/fpitems.module.css'
 import Image from 'next/image'
 import { useContext } from "react"
 import dataContext from "@/context/dataContext"
-
+import { renderTitle, renderImage } from '@/pages/bandSawsPage/Items/Items'
+import Link from 'next/link'
 
 const FPItems = () => {
 
 const contentfulData = useContext(dataContext)
 
-    const renderTitle = (id) => {
-        const item = contentfulData?.items?.find(item => item.sys.id === id)
-        return item ? <h6 key={item.sys.id}>{item?.fields?.title}</h6> : null
-    }
-
-    const renderImage = (id, alt) => {
-
-        const asset = contentfulData?.includes?.Asset?.find(asset => asset.sys.id === id)
-
-        if (asset) {
-            const imageUrl = 'https:' + asset.fields.file.url
-
-            return <Image src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id}></Image>
-
-        }
-    }
+    
 
     const renderPrice = (id) => {
         const item = contentfulData?.items?.find(item => item.sys.id === id)
@@ -35,28 +21,33 @@ const contentfulData = useContext(dataContext)
             <h2>Frequently Purchased Items</h2>
         </div>
         <div className={styles.main}>
+            <Link className={styles.link} href='/heavySawsPage/HeavySawsPage'>
             <div className={styles.cards}>
 
 
-                {renderTitle('1b2jWRC4nHnINbXflCmubH')}
-                {renderImage('29fPL5QFfyWPxCAZ0pkiQz', 'fpi3')}
+                {renderTitle('1b2jWRC4nHnINbXflCmubH',contentfulData)}
+                {renderImage('29fPL5QFfyWPxCAZ0pkiQz', 'fpi3',contentfulData)}
                 {renderPrice('1b2jWRC4nHnINbXflCmubH')}
             </div>
+            </Link>
+            <Link className={styles.link} href='staplerPage/StaplerPage'>
             <div className={styles.cards}>
 
-                {renderTitle('5NyPZs288xX8CXZdaU2KQE')}
-                {renderImage('6M9cqMoRwwyoTrGWdpgyFl', 'fp1')}
+                {renderTitle('5NyPZs288xX8CXZdaU2KQE',contentfulData)}
+                {renderImage('6M9cqMoRwwyoTrGWdpgyFl', 'fp1',contentfulData)}
                 {renderPrice('5NyPZs288xX8CXZdaU2KQE')}
             </div>
-
+            </Link>
+            <Link className={styles.link} href='bandSawsPage/BandSawsPage'>
             <div className={styles.cards}>
 
 
 
-                {renderTitle('42C2IdgXsc62NDz5rFWJrI')}
-                {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'fp1')}
+                {renderTitle('42C2IdgXsc62NDz5rFWJrI',contentfulData)}
+                {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'fp1',contentfulData)}
                 {renderPrice('42C2IdgXsc62NDz5rFWJrI')}
             </div>
+            </Link>
         </div>
     </>)
 }

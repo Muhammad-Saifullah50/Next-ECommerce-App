@@ -4,7 +4,7 @@ import Link from 'next/link'
 const navbar = () => {
 
     return (<>
-        <nav>
+        <nav >
             <ul className={styles.navbar}>
                 <Link href='/'><li>Home</li></Link>
                 <Link href='/categoriesPage/CategoriesPage'><li>Categories</li></Link>

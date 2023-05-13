@@ -3,6 +3,8 @@ import Header from '@/components/header/Header'
 
 import ApiDataState from '@/context/dataState'
 import Items from './Items/Items'
+import Footer from '@/components/Footer/Footer'
+
 
 const BandSawsPage = () => {
 
@@ -18,7 +20,7 @@ const BandSawsPage = () => {
             <ApiDataState>
                 <Items />
             </ApiDataState>
-
+            <Footer />
         </>
     )
 }

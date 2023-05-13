@@ -2,6 +2,7 @@ import Header from "@/components/header/Header"
 import Items from "./Items/Items"
 import ApiDataState from "@/context/dataState"
 import styles from '@/styles/global-category-pages.module.css'
+import Footer from "@/components/Footer/Footer"
 
 const LightSawsPage = () => {
 
@@ -13,6 +14,7 @@ const LightSawsPage = () => {
         <ApiDataState>
             <Items />
         </ApiDataState>
+        <Footer />
     </>)
 }
 
