@@ -7,7 +7,14 @@ import Counter from '../Counter'
 export const renderIntro = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <p key={item.sys.id}>{item?.fields?.introduction?.content[0]?.content[0].value}</p> : null;
+    let arrays = item?.fields?.introduction?.content
+        // console.log(arrays)
+
+        let values = arrays?.map(obj => obj.content[0].value);
+
+        let intro = values?.join('\r\n');
+
+        return item ? <p key={item.sys.id}>{intro}</p> : null;
 
 }
 export const renderOverview = (id, contentfulData) => {
