@@ -12,19 +12,17 @@ export const renderIntro = (id, contentfulData) => {
 }
 export const renderOverview = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
+    
+        console.log(item)
+        let arrays = item?.fields?.overview?.content
+        // console.log(arrays)
 
-    // console.log(item)
-    let arrays = item.fields.overview.content
-    // console.log(arrays)
+        let values = arrays?.map(obj => obj.content[0].value);
 
-    let values = arrays.map(obj => obj.content[0].value);
+        let overview = values?.join('\r\n');
 
-    let overview = values.join('\r\n');
-
-    return item ? <p key={item.sys.id}>{overview}</p> : null;
-
-
-}
+        return item ? <p key={item.sys.id}>{overview}</p> : null;
+    }
 
 
 const Page = () => {
@@ -52,11 +50,11 @@ const Page = () => {
                 <div className={styles.image}>
                     {renderImage('Qybq2kbrlxWZ7FcK0WUPd', 'alt', contentfulData)}
                 </div>
-                
+
             </div>
             <div className={styles.counter}>
-                    <Counter />
-                </div>
+                <Counter />
+            </div>
             <div className={styles.overview}>
                 {renderOverview('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData)}
             </div>
