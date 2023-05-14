@@ -75,10 +75,11 @@ const Categories = () => {
 
                     </div>
                 </Link>
-
-                <div className={styles.cards}>
-                    <iframe width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                </div>
+                <Link href='https://www.youtube.com/embed/DMQ0-ENXxZg'>
+                    <div className={styles.cards}>
+                        <iframe className={styles.video} width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    </div>
+                </Link>
             </div>
         </div>
 

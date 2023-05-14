@@ -1,0 +1,23 @@
+.banner {
+
+    background-image: url("/images/black.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    flex-direction: column;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 2.7rem;
+    margin-left: 5vw;
+    width: 61vw;
+
+}
+.btn{
+    margin-left: 5vw;
+    margin-bottom: 3vh;
+}
