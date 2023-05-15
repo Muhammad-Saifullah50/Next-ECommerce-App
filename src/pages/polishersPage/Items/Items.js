@@ -2,7 +2,7 @@ import styles from '@/styles/global-items.module.css'
 import { useContext } from 'react'
 import dataContext from '@/context/dataContext'
 import { renderTitle, renderImage, renderPrice, renderRating } from '@/pages/bandSawsPage/Items/Items'
-
+import Link from 'next/link'
 const Items = () => {
     const contentfulData = useContext(dataContext)
     console.log(contentfulData)
@@ -19,7 +19,8 @@ const Items = () => {
 
                         </div>
                         
-                        <button className={styles.button}>Read More</button>
+                        <Link href='/polishersPage/Desc/Desc-M-024/Desc_M_024'><button className={styles.button}>Read More</button></Link>
+
 
                     </div>
 

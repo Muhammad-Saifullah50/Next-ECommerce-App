@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Items = () => {
     const contentfulData = useContext(dataContext)
-    console.log(contentfulData)
+    // console.log(contentfulData)
     return (<>
         <div className={styles.itembox}>
         <div className={styles.items}>
@@ -20,7 +20,7 @@ const Items = () => {
 
                         </div>
                         
-                        <Link href='/rotaryCompressorPage/Desc/Desc_M_023'><button className={styles.button}>Read More</button></Link>
+                        <Link href='/rotaryCompressorPage/Desc/Desc-M-023/Desc_M_023'><button className={styles.button}>Read More</button></Link>
 
                     </div>
 

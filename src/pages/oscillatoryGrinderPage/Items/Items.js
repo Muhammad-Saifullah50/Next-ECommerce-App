@@ -1,12 +1,12 @@
 import styles from '@/styles/global-items.module.css'
 import { useContext } from 'react'
 import dataContext from '@/context/dataContext'
-
+import Link from 'next/link'
 import { renderTitle, renderImage, renderPrice, renderRating } from '@/pages/bandSawsPage/Items/Items'
 
 const Items = () => {
     const contentfulData = useContext(dataContext)
-    console.log(contentfulData)
+    // console.log(contentfulData)
 
     return (<>
         <div className={styles.itembox}>
@@ -22,7 +22,7 @@ const Items = () => {
 
                     </div>
 
-                    <button className={styles.button}>Read More</button>
+                    <Link href='/oscillatoryGrinderPage/Desc/Desc-M-006/Desc_M_006'><button className={styles.button}>Read More</button></Link>
 
                 </div>
 
@@ -42,7 +42,7 @@ const Items = () => {
 
                         </div>
                         
-                        <button className={styles.button}>Read More</button>
+                        <Link href='/oscillatoryGrinderPage/Desc/Desc-M-005/Desc_M_005'><button className={styles.button}>Read More</button></Link>
 
                     </div>
 

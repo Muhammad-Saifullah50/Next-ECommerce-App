@@ -2,6 +2,7 @@ import styles from '@/styles/global-items.module.css'
 import { useContext } from 'react'
 import dataContext from '@/context/dataContext'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 
@@ -59,7 +60,7 @@ const Items = () => {
 
                         </div>
                         
-                        <button className={styles.button}>Read More</button>
+                        <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'><button className={styles.button}>Read More</button></Link>
 
                     </div>
 
@@ -79,7 +80,7 @@ const Items = () => {
 
                         </div>
                         
-                        <button className={styles.button}>Read More</button>
+                        <Link href='/bandSawsPage/Desc/Desc-M-003/Desc_M_003'><button className={styles.button}>Read More</button></Link>
 
                     </div>
 
@@ -99,7 +100,7 @@ const Items = () => {
 
                         </div>
                         
-                        <button className={styles.button}>Read More</button>
+                        <Link href='/bandSawsPage/Desc/Desc-M-002/Desc_M_002'><button className={styles.button}>Read More</button></Link>
 
                     </div>
 
