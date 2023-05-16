@@ -11,7 +11,7 @@ export const renderIntro = (id, contentfulData) => {
 
         let values = arrays?.map(obj => obj.content[0].value);
 
-        let intro = values?.join('\r\n');
+        let intro = values?.join('\r\n \r\n');
 
         return item ? <p key={item.sys.id}>{intro}</p> : null;
 
@@ -25,7 +25,7 @@ export const renderOverview = (id, contentfulData) => {
 
         let values = arrays?.map(obj => obj.content[0].value);
 
-        let overview = values?.join('\r\n');
+        let overview = values?.join('\r\n \r\n');
 
         return item ? <p key={item.sys.id}>{overview}</p> : null;
     }
