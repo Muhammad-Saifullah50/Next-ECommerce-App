@@ -8,7 +8,7 @@ import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/D
 const Page = () => {
 
     const contentfulData = useContext(dataContext)
-    // console.log(contentfulData)
+    console.log(contentfulData)
 
     return (<>
         <div className={styles.page}>
@@ -17,18 +17,18 @@ const Page = () => {
                 <div className={styles.introbox}>
 
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('23OuUIipZC3nsBWFBW0lKv', contentfulData)}
                     </div>
                     <div className={styles.price}>
-                        {renderPrice('', contentfulData)}
+                        {renderPrice('23OuUIipZC3nsBWFBW0lKv', contentfulData)}
 
                     </div>
                     <div className={styles.introtext}>
-                        {renderIntro('', contentfulData)}
+                        {renderIntro('23OuUIipZC3nsBWFBW0lKv', contentfulData)}
                     </div>
                 </div>
                 <div className={styles.image}>
-                    {renderImage('', 'alt', contentfulData)}
+                    {renderImage('3yVcW9wxP135N934utsvAo', 'alt', contentfulData)}
                 </div>
 
             </div>
@@ -36,7 +36,7 @@ const Page = () => {
                 <Counter />
             </div>
             <div className={styles.overview}>
-                {renderOverview('', contentfulData)}
+                {renderOverview('23OuUIipZC3nsBWFBW0lKv', contentfulData)}
             </div>
 
         </div>

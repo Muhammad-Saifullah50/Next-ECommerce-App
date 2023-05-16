@@ -20,7 +20,7 @@ const Items = () => {
 
                         </div>
                         
-                        <Link href='/staplerPage/Desc/Desc-M-025/Desc_M_025'><button className={styles.button}>Read More</button></Link>
+                        <Link href='/toolboxPage/Desc/Desc-M-017/Desc_M_017'><button className={styles.button}>Read More</button></Link>
 
                     </div>
 

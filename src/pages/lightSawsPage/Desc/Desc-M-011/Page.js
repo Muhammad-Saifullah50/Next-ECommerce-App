@@ -17,18 +17,18 @@ const Page = () => {
                 <div className={styles.introbox}>
 
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('7HH2GzD3ESxEFlRt3ILAwz', contentfulData)}
                     </div>
                     <div className={styles.price}>
-                        {renderPrice('', contentfulData)}
+                        {renderPrice('7HH2GzD3ESxEFlRt3ILAwz', contentfulData)}
 
                     </div>
                     <div className={styles.introtext}>
-                        {renderIntro('', contentfulData)}
+                        {renderIntro('7HH2GzD3ESxEFlRt3ILAwz', contentfulData)}
                     </div>
                 </div>
                 <div className={styles.image}>
-                    {renderImage('', 'alt', contentfulData)}
+                    {renderImage('6yZMByZ6RWK8Hse0Tw6p9k', 'alt', contentfulData)}
                 </div>
 
             </div>
@@ -36,7 +36,7 @@ const Page = () => {
                 <Counter />
             </div>
             <div className={styles.overview}>
-                {renderOverview('', contentfulData)}
+                {renderOverview('7HH2GzD3ESxEFlRt3ILAwz', contentfulData)}
             </div>
 
         </div>
