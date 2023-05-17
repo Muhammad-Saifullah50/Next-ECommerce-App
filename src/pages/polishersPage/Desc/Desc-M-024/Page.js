@@ -3,33 +3,8 @@ import dataContext from '@/context/dataContext'
 import { useContext } from 'react'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'
 import Counter from '@/components/counter/Counter'
-export const renderIntro = (id, contentfulData) => {
-    const item = contentfulData?.items?.find((item) => item.sys.id === id)
-
-    let arrays = item?.fields?.introduction?.content
-        // console.log(arrays)
-
-        let values = arrays?.map(obj => obj.content[0].value);
-
-        let intro = values?.join('\r\n');
-
-        return item ? <p key={item.sys.id}>{intro}</p> : null;
-
-}
-export const renderOverview = (id, contentfulData) => {
-    const item = contentfulData?.items?.find((item) => item.sys.id === id)
-    
-        console.log(item)
-        let arrays = item?.fields?.overview?.content
-        // console.log(arrays)
-
-        let values = arrays?.map(obj => obj.content[0].value);
-
-        let overview = values?.join('\r\n');
-
-        return item ? <p key={item.sys.id}>{overview}</p> : null;
-    }
-
+import AddCartBtn from '@/components/addCartBtn/AddCartBtn'
+import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
 
 const Page = () => {
 
@@ -60,6 +35,8 @@ const Page = () => {
             </div>
             <div className={styles.counter}>
                 <Counter />
+                <AddCartBtn />
+
             </div>
             <div className={styles.overview}>
                 {renderOverview('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData)}

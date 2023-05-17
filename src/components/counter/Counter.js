@@ -1,4 +1,6 @@
+import styles from '@/styles/counter.module.css'
 import { useState } from "react"
+
 
 const Counter = () => {
 
@@ -8,9 +10,9 @@ const Counter = () => {
     const SubtractCount = () => setCount(count - 1)
     return(
         <>
-        <button onClick={AddCount}>+</button>
-        <span>{count}</span>
-        <button disabled={count === 1 } onClick={SubtractCount}>-</button>
+        <button className={styles.addbtn} onClick={AddCount}>+</button>
+        <span className={styles.count} >{count}</span>
+        <button className={styles.subbtn} disabled={count === 1 } onClick={SubtractCount}>-</button>
         </>
         )
 }

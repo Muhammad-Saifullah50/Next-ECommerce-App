@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'
 import Counter from '@/components/counter/Counter'
 import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
+import AddCartBtn from '@/components/addCartBtn/AddCartBtn'
 
 const Page = () => {
 
@@ -34,6 +35,7 @@ const Page = () => {
             </div>
             <div className={styles.counter}>
                 <Counter />
+                <AddCartBtn />
             </div>
             <div className={styles.overview}>
                 {renderOverview('', contentfulData)}

@@ -1,0 +1,8 @@
+.addbtn, .subbtn{
+    width: 2vw;
+    height: 2vw;
+}
+.count{
+    width: 5vw;
+    display: inline-flex;
+}
