@@ -17,18 +17,18 @@ const Page = () => {
                 <div className={styles.introbox}>
 
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('1NrzDH1i871nIp9nCZ8eTb', contentfulData)}
                     </div>
                     <div className={styles.price}>
-                        {renderPrice('', contentfulData)}
+                        {renderPrice('1NrzDH1i871nIp9nCZ8eTb', contentfulData)}
 
                     </div>
                     <div className={styles.introtext}>
-                        {renderIntro('', contentfulData)}
+                        {renderIntro('1NrzDH1i871nIp9nCZ8eTb', contentfulData)}
                     </div>
                 </div>
                 <div className={styles.image}>
-                    {renderImage('', 'alt', contentfulData)}
+                    {renderImage('6DwL4CdFT89zdilYLRHs9J', 'alt', contentfulData)}
                 </div>
 
             </div>
@@ -38,7 +38,7 @@ const Page = () => {
 
             </div>
             <div className={styles.overview}>
-                {renderOverview('', contentfulData)}
+                {renderOverview('1NrzDH1i871nIp9nCZ8eTb', contentfulData)}
             </div>
 
         </div>
