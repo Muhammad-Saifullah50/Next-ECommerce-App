@@ -1,39 +1,37 @@
 import '@/styles/globals.css'
 import Loader from './Loader'
-
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 export default function App({ Component, pageProps }) {
-
   const [loading, setLoading] = useState(true);
   const router = useRouter()
 
   useEffect(() => {
-
-    const handleRouteChange = () => {
+    const handleRouteChangeStart = () => {
       setLoading(true)
-      return;
-    };
+    }
 
-    const handleRouteComplete = () => {
+    const handleRouteChangeComplete = () => {
       setLoading(false)
-      return;
-    };
+    }
 
-    router.events.on('routeChangeStart', handleRouteChange)
-    router.events.on('routeChangeComplete', handleRouteComplete)// If the component is unmounted, unsubscribe
+    router.events.on('routeChangeStart', handleRouteChangeStart)
+    router.events.on('routeChangeComplete', handleRouteChangeComplete)
 
-    // from the event with the `off` method:
     return () => {
-      router.events.off('routeChangeStart', handleRouteChange)
+      router.events.off('routeChangeStart', handleRouteChangeStart)
+      router.events.off('routeChangeComplete', handleRouteChangeComplete)
     }
   }, [])
-  return (<>
 
-    {loading ? (<Loader />) : (
-      <Component {...pageProps} />
-    )
-    }
-  </>)
+  return (
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <Component {...pageProps} />
+      )}
+    </>
+  )
 }
