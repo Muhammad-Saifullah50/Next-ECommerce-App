@@ -24,6 +24,7 @@ const Page = () => {
 
                     </div>
                     <div className={styles.introtext}>
+                        <h3>Introduction</h3>
                         {renderIntro('5Hs3AXgof4FH9YQPmTIXzE', contentfulData)}
                     </div>
                 </div>
@@ -38,6 +39,7 @@ const Page = () => {
 
             </div>
             <div className={styles.overview}>
+                <h3>Product Overview</h3>
                 {renderOverview('5Hs3AXgof4FH9YQPmTIXzE', contentfulData)}
             </div>
 

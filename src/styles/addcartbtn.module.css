@@ -5,7 +5,10 @@
     border-radius: 5px;
     font-size: 0.9rem;
     width: 8vw;
-    height: 6vh;
+    height: 5vh;
+    margin-left: 3rem;
+    border: none;
+    font-weight: bold;
 }
 .btn:hover{
     background-color: black;

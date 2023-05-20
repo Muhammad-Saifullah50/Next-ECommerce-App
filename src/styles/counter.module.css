@@ -1,8 +1,27 @@
 .addbtn, .subbtn{
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 5vh;
+    background-color: #e1e1e1cf;
+    border: 1px solid #939393;
+    border-radius: 5px;
+    
 }
-.count{
-    width: 5vw;
-    display: inline-flex;
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    align-items: center;
+    width: 13vw;
+    height: 5vh;
+    background-color: #e1e1e1cf;
 }
+.counter span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e1e1cf;
+    width: 4vw;
+    height: 5vh;
+}
+

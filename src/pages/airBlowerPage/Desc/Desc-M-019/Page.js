@@ -18,18 +18,19 @@ const Page = () => {
                 <div className={styles.introbox}>
 
                     <div className={styles.heading}>
-                        {renderTitle('', contentfulData)}
+                        {renderTitle('6kockzUuFLatyUrwsYzZam', contentfulData)}
                     </div>
                     <div className={styles.price}>
-                        {renderPrice('', contentfulData)}
+                        {renderPrice('6kockzUuFLatyUrwsYzZam', contentfulData)}
 
                     </div>
                     <div className={styles.introtext}>
-                        {renderIntro('', contentfulData)}
+                        <h3>Introduction</h3>
+                        {renderIntro('6kockzUuFLatyUrwsYzZam', contentfulData)}
                     </div>
                 </div>
                 <div className={styles.image}>
-                    {renderImage('', 'alt', contentfulData)}
+                    {renderImage('4mKPrdHCD0HCi93hgvar6G', 'alt', contentfulData)}
                 </div>
 
             </div>
@@ -38,7 +39,8 @@ const Page = () => {
                 <AddCartBtn />
             </div>
             <div className={styles.overview}>
-                {renderOverview('', contentfulData)}
+                <h3>Product Overview</h3>
+                {renderOverview('6kockzUuFLatyUrwsYzZam', contentfulData)}
             </div>
 
         </div>

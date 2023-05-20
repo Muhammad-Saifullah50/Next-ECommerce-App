@@ -14,6 +14,7 @@ const Desc_M_008 = () => {
         <ApiDataState>
             <Page />
         </ApiDataState>
+        <Footer />
     </>)
 }
 export default Desc_M_008

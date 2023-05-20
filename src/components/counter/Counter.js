@@ -8,13 +8,17 @@ const Counter = () => {
 
     const AddCount = () => setCount(count + 1)
     const SubtractCount = () => setCount(count - 1)
-    return(
+    return (
         <>
-        <button className={styles.addbtn} onClick={AddCount}>+</button>
-        <span className={styles.count} >{count}</span>
-        <button className={styles.subbtn} disabled={count === 1 } onClick={SubtractCount}>-</button>
+            <div className={styles.counter}>
+                <button className={styles.subbtn} disabled={count === 1} onClick={SubtractCount}>-</button>
+
+                <span className={styles.count} >{count}</span>
+                <button className={styles.addbtn} disabled={count === 5} onClick={AddCount}>+</button>
+
+            </div>
         </>
-        )
+    )
 }
 
 export default Counter
