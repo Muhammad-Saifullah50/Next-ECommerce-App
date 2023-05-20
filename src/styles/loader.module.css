@@ -1,0 +1,13 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+.loader img {
+    margin-top: -35vh;
+    width: 15rem;
+    height: 8rem;
+}
