@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 
 export default function App({ Component, pageProps }) {
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const router = useRouter()
 
   useEffect(() => {
