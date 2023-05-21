@@ -3,7 +3,6 @@ import ApiDataState from '@/context/dataState'
 import Header from '@/components/header/Header'
 import Footer from '@/components/Footer/Footer'
 import Page from './Page'
-import CartState from '@/context/cart-context/cartState'
 const Desc_M_010 = () => {
 
     return (<>
@@ -16,9 +15,7 @@ const Desc_M_010 = () => {
             </h2>
         </div>
         <ApiDataState>
-            <CartState>
                 <Page />
-            </CartState>
         </ApiDataState>
         <Footer />
     </>)

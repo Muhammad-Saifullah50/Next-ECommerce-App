@@ -7,8 +7,9 @@ const CartState = ({children}) => {
 
 const [cartItems, setCartItems] = useState([])
 
+console.log(cartItems)
 return (
-    <cartContext.Provider value={[cartItems, setCartItems]}>
+    <cartContext.Provider value={{cartItems, setCartItems}}>
         {children}
     </cartContext.Provider>
 )

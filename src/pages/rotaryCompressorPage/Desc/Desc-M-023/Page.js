@@ -39,18 +39,18 @@ export const renderOverview = (id, contentfulData) => {
 export const productId = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    console.log(item.sys.id)
+    // console.log(item.sys.id)
     return item.sys.id
 
 }
 export const productName = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
-    console.log(item?.fields?.title)
+    // console.log(item?.fields?.title)
     return item?.fields?.title
 }
 export const productPrice = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
-    console.log(item?.fields?.price)
+    // console.log(item?.fields?.price)
     return item?.fields?.price
 }
 
@@ -64,6 +64,8 @@ export const addItemToCart = (id, name, price, cartItems, setCartItems) => {
 
     }
     setCartItems([...cartItems, newItem]);
+    // console.log([cartItems])
+
     // console.log('Updated cart items:', cartItems);
 }
 
@@ -71,7 +73,7 @@ export const addItemToCart = (id, name, price, cartItems, setCartItems) => {
 const Page = () => {
 
     const contentfulData = useContext(dataContext)
-    const [cartItems, setCartItems] = useContext(cartContext)
+    const {cartItems, setCartItems} = useContext(cartContext)
 
     // console.log(contentfulData)
 

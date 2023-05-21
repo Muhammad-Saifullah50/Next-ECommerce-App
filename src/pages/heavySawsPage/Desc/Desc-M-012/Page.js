@@ -12,7 +12,7 @@ const Page = () => {
 
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
-    const [cartItems, setCartItems] = useContext(cartContext)
+    const {cartItems, setCartItems} = useContext(cartContext)
 
     return (<>
         <div className={styles.page}>

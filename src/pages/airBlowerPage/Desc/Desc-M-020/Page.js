@@ -10,7 +10,7 @@ import { productId,productName,productPrice,addItemToCart } from '@/pages/rotary
 const Page = () => {
 
     const contentfulData = useContext(dataContext)
-    const [cartItems, setCartItems] = useContext(cartContext)
+    const {cartItems, setCartItems} = useContext(cartContext)
     // console.log(contentfulData)
 
     return (<>

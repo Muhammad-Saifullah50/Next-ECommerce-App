@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import Loader from './Loader'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import CartState from '@/context/cart-context/cartState';
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ export default function App({ Component, pageProps }) {
 
     return timer; // Return the timeout reference
   };
-  
+
 
   const timerRef = initialLoading();
 
@@ -47,11 +48,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <Component {...pageProps} />
-      )}
+      <CartState>
+        {loading ? (
+          <Loader />
+        ) : (
+          <Component {...pageProps} />
+        )}
+      </CartState>
     </>
   );
 }

@@ -12,7 +12,7 @@ const Page = () => {
 
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
-    const [cartItems, setCartItems] = useContext(cartContext)
+    const {cartItems, setCartItems} = useContext(cartContext)
 
 
     return (<>
@@ -44,7 +44,7 @@ const Page = () => {
                     addItemToCart(
                         productId('3620jt2hJUpqR0rP41nZLT', contentfulData),
                         productName('3620jt2hJUpqR0rP41nZLT', contentfulData),
-                        productPrice('3620jt2hJUpqR0rP41nZLT'), contentfulData,
+                        productPrice('3620jt2hJUpqR0rP41nZLT', contentfulData),
                         cartItems, setCartItems
                     )
                 }}/>
