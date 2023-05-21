@@ -4,10 +4,11 @@
     align-items: center;
     height: 100vh;
     /* border: 2px solid red; */
+    flex-direction: column;
 }
 
-.loader img {
-    margin-top: -35vh;
-    width: 15rem;
-    height: 8rem;
+.logo img {
+    margin-top: -15vh;
+    width: 13rem;
+    height: 7rem;
 }
