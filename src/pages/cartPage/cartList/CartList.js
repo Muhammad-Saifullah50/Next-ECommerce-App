@@ -9,14 +9,16 @@ const CartList = () => {
     const { cartItems } = useContext(cartContext)
     console.log(cartItems)
 
+   
     return (<>
         <div className={styles.list}>
+            
             {cartItems.map((item) =>
             (
                 <div key={item.id} className={styles.listitem}>
-                    <h4>{item.name}</h4>
-                    <p>{item.quantity}</p>
-                    <p>{item.price}</p>
+                   <div className={styles.name}> <h4>{item.name}</h4></div>
+                   <div className={styles.quantity}> <p>{item.quantity}</p></div>
+                   <div className={styles.price}> <p>{item.price}</p></div>
                 </div>
             )
 

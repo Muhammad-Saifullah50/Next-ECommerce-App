@@ -11,12 +11,22 @@
     width: 95%;
     height: 4rem;
     margin: 0.7rem auto;
+    justify-content: space-between;
 
 
 }
-.listitem h4 {
-
+.name{
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
 }
-.listitem p {
-
+.quantity{
+    display: flex;
+    border: 1px solid brown;
+    width: 10%;
+}
+.price{
+    display: flex;
+    border: 1px solid pink;
+    width: 40%;
 }
