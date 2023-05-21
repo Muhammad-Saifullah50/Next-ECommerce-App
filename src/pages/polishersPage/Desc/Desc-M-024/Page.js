@@ -5,11 +5,14 @@ import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Item
 import Counter from '@/components/counter/Counter'
 import AddCartBtn from '@/components/addCartBtn/AddCartBtn'
 import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
+import cartContext from '@/context/cart-context/cartContext'
+import { productId, productName, productPrice,addItemToCart } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
 
 const Page = () => {
 
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
+    const [cartItems, setCartItems] = useContext(cartContext)
 
     return (<>
         <div className={styles.page}>
@@ -36,8 +39,13 @@ const Page = () => {
             </div>
             <div className={styles.counter}>
                 <Counter />
-                <AddCartBtn />
-
+                <AddCartBtn onClick={() => {
+                    addItemToCart(
+                        productId('74pq5ih7dMMuZZ64MKYk4b', contentfulData),
+                        productName('74pq5ih7dMMuZZ64MKYk4b', contentfulData),
+                        productPrice('74pq5ih7dMMuZZ64MKYk4b', contentfulData),cartItems,setCartItems
+                    )
+                }}/>
             </div>
             <div className={styles.overview}>
                 <h3>Product Overview</h3>

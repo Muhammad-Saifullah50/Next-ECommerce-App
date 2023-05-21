@@ -1,6 +1,8 @@
 import styles from '@/styles/global-desc-page.module.css'
 import dataContext from '@/context/dataContext'
 import { useContext } from 'react'
+import cartContext from '@/context/cart-context/cartContext'
+import { productId, productName, productPrice,addItemToCart } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'
 import Counter from '@/components/counter/Counter'
 import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
@@ -9,6 +11,7 @@ const Page = () => {
 
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
+    const [cartItems, setCartItems] = useContext(cartContext)
 
     return (<>
         <div className={styles.page}>
@@ -35,7 +38,13 @@ const Page = () => {
             </div>
             <div className={styles.counter}>
                 <Counter />
-                <AddCartBtn />
+                <AddCartBtn onClick={() => {
+                    addItemToCart(
+                        productId('2fOnOQVOUX6JsuT86U0tzK', contentfulData),
+                        productName('2fOnOQVOUX6JsuT86U0tzK', contentfulData),
+                        productPrice('2fOnOQVOUX6JsuT86U0tzK', contentfulData),cartItems,setCartItems
+                    )
+                }}/>
 
             </div>
             <div className={styles.overview}>
