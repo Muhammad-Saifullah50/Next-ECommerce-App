@@ -4,7 +4,7 @@
     width: 100%;
     justify-content: stretch;
     background-color: #f0dd0c;
-    
+    justify-content: space-evenly;
 }
 
 
@@ -12,9 +12,10 @@
     list-style: none;
     padding: 6px 29px ;
     margin: 2px 0px;
-    border-right: 0.5px solid black;
     background-color: #f0dd0c;
     text-align: center;
+    width: auto;
+    border-radius: 10px;
 
 }
 .navbar li:hover{
@@ -26,6 +27,5 @@ background-color: black;
     text-decoration: none;
     color: black;
 }
-#last{
-    border: none;
-}
+
+

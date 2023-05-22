@@ -4,11 +4,12 @@ import styles from '@/styles/lowerbar.module.css'
 
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 const lowerbar = () => {
 
     return (<>
-        
+
         <div className={styles.lowerbar}>
             <div className={styles.logobox}>
                 <Image className={styles.logo} src="/images/logo1.png" width={100}
@@ -22,12 +23,16 @@ const lowerbar = () => {
                 <Image className={styles.searchicon} src="/images/search.png" width={15} height={15} alt='search icon'>
                 </Image>
             </div>
-            <div className={styles.cartbox}>
-               <div className={styles.carttext}>&nbsp;Shopping Cart</div> 
-                <Image src="/images/cart1.png" width={25} height={23} alt='cart'>
+            <Link href='/cartPage/CartPage'>
+                <button className={styles.cartbox}>
+                    <div className={styles.carttext}>&nbsp;Shopping Cart</div>
+                    <Image src="/images/cart1.png" width={25} height={23} alt='cart'>
 
-                </Image>
-            </div>
+                    </Image>
+
+                </button>
+            </Link>
+
         </div>
     </>)
 }
