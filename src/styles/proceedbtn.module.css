@@ -1,0 +1,17 @@
+.btn button {
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border-radius: 0.2rem;
+    border: none;
+    width: 8rem;
+    height: 2rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 2vh auto;
+}

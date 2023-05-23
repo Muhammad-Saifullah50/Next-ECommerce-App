@@ -1,0 +1,26 @@
+.container{
+    border: 1px solid red;
+}
+.firstname{
+    border: 1px solid plum;
+
+}
+.lastname{
+    border: 1px solid orange;
+
+}
+.phone{
+    border: 1px solid purple;
+
+}
+.payment{
+    border: 1px solid pink;
+
+}
+.address{
+    border: 1px solid green;
+
+}
+.btns{
+    border: 1px solid blue;
+}
