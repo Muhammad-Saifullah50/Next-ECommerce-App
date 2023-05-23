@@ -4,7 +4,7 @@ const ProceedBtn = ({onclick}) => {
 
     return(<>
     <div className={styles.btn}>
-        <button>Proceed</button>
+        <button onClick={onclick}>Proceed</button>
     </div>
     </>)
 } 
