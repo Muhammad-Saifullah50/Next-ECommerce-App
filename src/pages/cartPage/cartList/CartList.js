@@ -1,4 +1,4 @@
-import styles from '@/styles/cart.module.css'
+import styles from '@/styles/cartlist.module.css'
 import { useContext } from 'react'
 import cartContext from '@/context/cart-context/cartContext'
 
