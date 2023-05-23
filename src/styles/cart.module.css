@@ -1,4 +1,4 @@
-.heading{
+.heading {
     display: flex;
     width: 95%;
     height: 3rem;
@@ -8,12 +8,13 @@
     align-items: center;
 }
 
-.list{
+.list {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
 }
-.listitem{
+
+.listitem {
     /* border: 1px solid purple; */
     display: flex;
     background-color: white;
@@ -28,26 +29,30 @@
 
 
 }
-.name{
+
+.name {
     display: flex;
     /* border: 1px solid black; */
     width: 50%;
     padding-left: 2vw;
 }
-.quantity{
+
+.quantity {
     display: flex;
     /* border: 1px solid brown; */
     width: 10%;
     justify-content: center;
 
 }
-.price{
+
+.price {
     display: flex;
     /* border: 1px solid pink; */
     width: 40%;
     justify-content: center;
 }
-.button button{
+
+.button button {
     position: relative;
     font-family: 'Baloo Bhai 2', cursive;
     font-weight: bold;
@@ -58,6 +63,8 @@
     width: 4rem;
     height: 2rem;
 }
-.button{
+
+.button {
     padding-right: 2vh;
 }
+
