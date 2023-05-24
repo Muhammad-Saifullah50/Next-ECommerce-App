@@ -1,0 +1,63 @@
+.page {
+    width: 95%;
+    background-color: white;
+    margin: auto auto;
+    padding: 2rem 2rem;
+    margin-bottom: -3rem;
+    /* border: 1px solid black; */
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+
+}
+.heading{
+    margin-bottom: 1rem;
+    display: flex;
+}
+.heading h3{
+    font-size: 1.8rem;
+}
+.price{
+    margin-bottom: 1rem;
+    display: flex;
+}
+.price p {
+    font-size: 1.5rem;
+    font-weight:bold ;
+    color: #ffca00;
+}
+.introbox{
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.image {
+    width: 40%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 22vw;
+    height: 40vh;
+}
+
+.overview {
+    white-space: pre-line;
+    /* border: 1px solid purple; */
+   
+}
+.overview p{
+    margin-bottom: 1rem;
+
+}
+.counter{
+ display: flex;
+ margin-bottom: 1rem;
+    /* border: 1px solid blue; */
+}
+

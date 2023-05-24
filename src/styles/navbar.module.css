@@ -1,0 +1,31 @@
+.navbar {
+    border: 2px solid orange;
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+    background-color: #f0dd0c;
+    justify-content: space-evenly;
+}
+
+
+.navbar li {
+    list-style: none;
+    padding: 6px 29px ;
+    margin: 2px 0px;
+    background-color: #f0dd0c;
+    text-align: center;
+    width: auto;
+    border-radius: 10px;
+
+}
+.navbar li:hover{
+    color: #f0dd0c;
+background-color: black;    
+
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+
