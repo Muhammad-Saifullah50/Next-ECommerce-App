@@ -13,7 +13,7 @@ const AboutPage = () => {
             <h1>Welcome to DEWALT: Powering Your Success</h1>
             <p>At DEWALT, we believe in empowering individuals and professionals with the tools they need to achieve their greatest potential. For over a century, we have been at the forefront of innovation in the construction and manufacturing industries, providing top-quality power tools, accessories, and solutions that are trusted by tradespeople worldwide.</p>
             <h2>Our Commitment to Excellence</h2>
-            <p>At the heart of our company lies a steadfast commitment to excellence. We understand that success is built on a foundation of reliability, durability, and performance. That's why every DEWALT product is designed and engineered to deliver exceptional results, even in the most demanding environments. From our legendary cordless drills to our advanced cutting-edge technology, we continuously strive to exceed your expectations.
+            <p>At the heart of our company lies a steadfast commitment to excellence. We understand that success is built on a foundation of reliability, durability, and performance. That is why every DEWALT product is designed and engineered to deliver exceptional results, even in the most demanding environments. From our legendary cordless drills to our advanced cutting-edge technology, we continuously strive to exceed your expectations.
 
             </p>
             <h2>Unleashing the Power of Innovation:</h2>
