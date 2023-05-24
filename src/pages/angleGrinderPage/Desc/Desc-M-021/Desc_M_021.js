@@ -3,12 +3,13 @@ import ApiDataState from '@/context/dataState'
 import Header from '@/components/header/Header'
 import Footer from '@/components/Footer/Footer'
 import Page from './Page'
+import Link from 'next/link'
 const Desc_M_021 = () => {
 
     return (<>
         <Header />
         <div className={styles.banner}>
-            <button className={styles.btn}>Go Back</button>
+           <Link href='/angleGrinderPage/AngleGrinderPage'><button className={styles.btn}>Go Back</button></Link> 
             <h2>DeWalt Modern Grinder M-021</h2>
         </div>
         <ApiDataState>

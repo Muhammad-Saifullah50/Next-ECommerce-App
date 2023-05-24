@@ -3,13 +3,13 @@ import ApiDataState from '@/context/dataState'
 import Header from '@/components/header/Header'
 import Footer from '@/components/Footer/Footer'
 import Page from './Page'
+import Link from 'next/link'
 const Desc_M_014 = () => {
 
     return (<>
         <Header />
         <div className={styles.banner}>
-            <button className={styles.btn}>Go Back</button>
-            <h2>DeWalt Compact Slide Miter Saw M-014
+        <Link href='/heavySawsPage/HeavySawsPage'> <button className={styles.btn}>Go Back</button> </Link>              <h2>DeWalt Compact Slide Miter Saw M-014
             </h2>
         </div>
         <ApiDataState>

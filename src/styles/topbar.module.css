@@ -48,6 +48,13 @@
     border-right: 1px solid rgb(102 98 98);
     padding-right: 20px; 
 }
+.topnav li:hover{
+ text-decoration: underline;
+}
 #login{
     border: none;
+}
+.topnav a{
+    text-decoration: none;
+    color: white;
 }

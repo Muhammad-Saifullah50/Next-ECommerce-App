@@ -6,7 +6,7 @@
     height: 45vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start ;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -17,7 +17,18 @@
     width: 61vw;
 
 }
-.btn{
+
+.btn {
     margin-left: 5vw;
     margin-bottom: 3vh;
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+    background-color: #e3b212;
+    color: black;
+    border-radius: 0.2rem;
+    border: none;
+    width: 5rem;
+    height: 2rem;
 }
+
