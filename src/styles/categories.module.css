@@ -75,4 +75,50 @@
 
 
 }
+/* @media (max-width: 1900px) {
+    .cardgrid {
+        margin-left: 18.5vh;
+    }
+}
 
+@media (max-width: 1000px) {
+
+    #video,
+    #stapler {
+        display: none;
+    }
+
+    .cardgrid {
+        width: 70%;
+        margin: auto auto;
+    }
+}
+
+
+
+@media (max-width: 786px) {
+
+    #blower,
+    #toolbox {
+        display: none;
+    }
+
+    .cardgrid {
+        width: 60%;
+        margin: auto auto;
+    }
+}
+
+@media (max-width: 574px) {
+
+    #compressor,
+    #grinder {
+        display: none;
+    }
+
+    .cardgrid {
+        width: 50%;
+        margin: auto auto;
+    }
+}
+ */
