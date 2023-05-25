@@ -27,5 +27,9 @@ background-color: black;
     text-decoration: none;
     color: black;
 }
-
+@media (max-width: 475px) {
+    #cart{
+        display: none;
+    }
+}
 

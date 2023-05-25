@@ -8,7 +8,7 @@ const navbar = () => {
             <ul className={styles.navbar}>
                 <Link href='/'><li>Home</li></Link>
                 <Link href='/categoriesPage/CategoriesPage'><li>Categories</li></Link>
-                <Link href='/cartPage/CartPage'><li>My Cart</li></Link>
+                <Link id={styles.cart} href='/cartPage/CartPage'><li>My Cart</li></Link>
                 <li>Attributes</li>
             </ul>
         </nav>
