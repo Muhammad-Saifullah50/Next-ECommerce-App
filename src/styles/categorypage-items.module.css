@@ -78,3 +78,78 @@
     color: #F9E722;
     background-color: black;
 }
+@media (max-width: 955px){
+    .cardgrid{
+        column-gap: 50vh;
+    }
+}
+@media (max-width: 885px){
+    .cardgrid{
+        column-gap: 45vh;
+    }
+}
+@media (max-width: 835px){
+    .cards{
+        width: 50vh;
+        height: 50vh;
+    }
+    .cards h3{
+        font-size: 1.2rem;
+    }
+    .cards img{
+        margin-top: 1vh;
+        height: 33vh;
+        width: 33vh;
+    }
+    .cards p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 810px){
+    .cardgrid{
+        column-gap: 37vh;
+        row-gap: 40vh;
+    }
+}
+@media (max-width: 765px){
+    .cards{
+        width: 45vh;
+        height: 45vh;
+    }
+    .cards h3{
+        font-size: 1.1rem;
+    }
+    .cards img{
+        margin-top: 1vh;
+        height: 28vh;
+        width: 28vh;
+    }
+    .cards p{
+        font-size: 1.2rem;
+    }
+
+}
+@media (max-width: 716px){
+    .cardgrid{
+        column-gap: 33vh;
+        row-gap: 35vh;
+    }
+}
+@media (max-width: 686px){
+    .cards{
+        width: 40vh;
+        height: 40vh;
+    }
+    .cards h3{
+        font-size: 1rem;
+    }
+    .cards img{
+        margin-top: 1vh;
+        height: 23vh;
+        width: 23vh;
+    }
+    .cards p{
+        font-size: 1.1rem;
+    }
+
+}
