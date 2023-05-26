@@ -26,7 +26,7 @@ const Categories = () => {
                     </div>
                 </Link>
                 <Link className={styles.link} href='rotaryCompressorPage/RotaryCompressorPage'>
-                    <div className={styles.cards}>
+                    <div id={styles.compressor} className={styles.cards}>
                         {renderImage('Qybq2kbrlxWZ7FcK0WUPd', 'category2', contentfulData)}
 
                         {renderTitle('6cYafFjpZfFxLQNjCpTjfH', contentfulData)}
@@ -34,7 +34,7 @@ const Categories = () => {
                     </div>
                 </Link>
                 <Link className={styles.link} href='toolboxPage/ToolboxPage'>
-                    <div className={styles.cards}>
+                    <div id={styles.toolbox} className={styles.cards}>
                         {renderImage('28uDfdCuQxxxuzCMwiXQWT', 'category3', contentfulData)}
 
                         {renderTitle('3KTDuJ3m402V1aTV2uSfzG', contentfulData)}
@@ -42,7 +42,7 @@ const Categories = () => {
                     </div>
                 </Link>
                 <Link className={styles.link} href='staplerPage/StaplerPage'>
-                    <div className={styles.cards}>
+                    <div id={styles.stapler} className={styles.cards}>
 
                         {renderImage('6M9cqMoRwwyoTrGWdpgyFl', 'category4', contentfulData)}
 
@@ -50,8 +50,8 @@ const Categories = () => {
 
                     </div>
                 </Link>
-                <Link className={styles.link} href='polishersPage/PolisherPage'>
-                    <div className={styles.cards}>
+                <Link  className={styles.link} href='polishersPage/PolisherPage'>
+                    <div id={styles.polishers} className={styles.cards}>
 
                         {renderImage('3cv9gZ8URV4IiI6lpmHKBE', 'category5', contentfulData)}
 
@@ -59,16 +59,16 @@ const Categories = () => {
 
                     </div>
                 </Link>
-                <Link className={styles.link} href='angleGrinderPage/AngleGrinderPage'>
-                    <div className={styles.cards}>
+                <Link  className={styles.link} href='angleGrinderPage/AngleGrinderPage'>
+                    <div id={styles.grinder} className={styles.cards}>
                         {renderImage('1thaKzAhUAhdU3jf2XzW7w', 'category6', contentfulData)}
 
                         {renderTitle('4dxFYquMLEG3UQvDiCKS8A', contentfulData)}
 
                     </div>
                 </Link>
-                <Link className={styles.link} href='airBlowerPage/AirBlowerPage'>
-                    <div className={styles.cards}>
+                <Link  className={styles.link} href='airBlowerPage/AirBlowerPage'>
+                    <div id={styles.blower} className={styles.cards}>
                         {renderImage('4mKPrdHCD0HCi93hgvar6G', 'category7', contentfulData)}
 
                         {renderTitle('5ikGRgtNGXtwR2nYYN5mXl', contentfulData)}
@@ -76,7 +76,7 @@ const Categories = () => {
                     </div>
                 </Link>
                 <Link href='https://www.youtube.com/embed/DMQ0-ENXxZg'>
-                    <div className={styles.cards}>
+                    <div id={styles.video} className={styles.cards}>
                         <iframe className={styles.video} width="192" height="192" src="https://www.youtube.com/embed/DMQ0-ENXxZg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                 </Link>

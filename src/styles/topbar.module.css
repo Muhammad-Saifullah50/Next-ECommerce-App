@@ -46,15 +46,42 @@
 
 .topnav li {
     border-right: 1px solid rgb(102 98 98);
-    padding-right: 20px; 
+    padding-right: 20px;
 }
-.topnav li:hover{
- text-decoration: underline;
+
+.topnav li:hover {
+    text-decoration: underline;
 }
-#login{
+
+#login {
     border: none;
 }
-.topnav a{
+
+.topnav a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 860px) {
+    #lang {
+        display: none;
+    }
+}
+
+@media (max-width:730px) {
+    .timing {
+        display: none;
+    }
+
+    .topnav {
+        position: absolute;
+        right: 5px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .phno {
+        display: none;
+    }
 }

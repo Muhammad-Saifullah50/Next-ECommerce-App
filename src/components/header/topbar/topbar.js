@@ -20,7 +20,7 @@ const topbar = () => {
             </div>
             <div className={styles.sidebox}>
                 <ul className={styles.topnav}>
-                    <li>ENG</li>
+                    <li id={styles.lang}>ENG</li>
                     <Link href='/aboutPage/AboutPage'>   <li>About Us</li> </Link>
                     <li>Customer Service</li>
                     <li id={styles.login}>Login</li>

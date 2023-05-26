@@ -33,12 +33,42 @@
     margin-top: 1vh;
 
 }
-.btn{
-    height:6vh;
+
+.btn {
+    height: 6vh;
     width: 12vw;
     background-color: black;
     color: #f0dd0c;
     margin: 1vh 12vh;
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 17px;
+}
+
+@media (max-width: 700px) {
+
+    .agreement,
+    .email {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .text p {
+        display: none;
+    }
+
+    .agreement {
+        display: none;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 560px) {
+   .newsletter{
+    display: none;
+   }
+
 }

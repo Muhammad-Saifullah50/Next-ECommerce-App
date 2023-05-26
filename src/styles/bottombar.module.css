@@ -80,3 +80,24 @@
     text-align: center;
 }
 
+@media (max-width: 528px){
+    .categories{
+        display: none;
+    }
+}
+@media (max-width: 386px){
+    .links{
+        display: none;
+    }
+
+}
+@media (max-width: 580px){
+    #conditions{
+        display: none;
+    }
+}
+@media (max-width: 425px){
+    #policy{
+        display: none;
+    }
+}

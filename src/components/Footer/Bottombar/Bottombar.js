@@ -39,8 +39,8 @@ const Bottombar = () => {
         <div className={styles.basebox}>
             <ul className={styles.basebar}>
                 <li><p>Dewalt. All Rights Reserved</p> </li>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
+                <li id={styles.policy}>Privacy Policy</li>
+                <li id={styles.conditions}>Terms and Conditions</li>
                 <li>Contact Us</li>
             </ul>
 
