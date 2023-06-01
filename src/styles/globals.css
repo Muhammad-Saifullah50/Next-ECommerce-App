@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,4 +16,3 @@ body {
   font-family: 'Baloo Bhai 2', cursive;
   background-color: #f0f3ff;
 }
-
