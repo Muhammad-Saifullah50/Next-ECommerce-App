@@ -80,7 +80,7 @@
     border-radius: 5px;
 }
 
-@media (max-width: 690px) {
+/* @media (max-width: 690px) {
     .searchbox {
         display: none;
     }
@@ -110,4 +110,4 @@
     .logobox img {
         width: 80%;
     }
-}
+} */
