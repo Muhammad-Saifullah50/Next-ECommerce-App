@@ -11,12 +11,19 @@ const Carousel = () => {
         <link rel="preload" href="/images/slide4.png" as="image" />
       </Head>
 
-      <div className="imgslider w-[95%] h-[70vh] bg-[url(/images/slide1.png)] max-w-full max-h-full bg-cover bg-center bg-no-repeat flex my-[2vh] mx-auto " id={styles.imgslider}>
+      <div className="imgslider h-[35vh] w-full md:w-[95%] md:h-[40vh] lg:h-[60vh] md:mt-5 md:mx-auto" id={styles.imgslider}>
+        {/* above small screens inside carousel */}
 
-        <div className="carouseltext">
-          <h2>Professional Power Tools</h2>
-          <p>Over the years, we have created professional power tools and equipment that complement your construction and building process.</p>
-        </div>
+      <div className="carouseltext hidden md:flex flex-col  absolute bg-gray-950 opacity-60 text-white w-[40%] left-[57%] h-[40vh] lg:h-[60vh] px-5 py-10 ">
+        <h2 className='md:text-2xl md:font-bold'>Professional Power Tools</h2>
+        <p className='text-base md:text-xl md:pt-10'>Over the years, we have created professional power tools and equipment that complement your construction and building process.</p>
+      </div>
+
+      </div>
+      {/* on small screens below carousel */}
+      <div className="carouseltext px-3 py-3  md:hidden ">
+        <h2 className='text-xl font-semibold '>Professional Power Tools</h2>
+        <p className='text-base'>Over the years, we have created professional power tools and equipment that complement your construction and building process.</p>
       </div>
     </>
   );

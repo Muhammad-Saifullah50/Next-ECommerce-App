@@ -1,10 +1,17 @@
 #imgslider {
   
+    background-image: url(/images/slide1.png);
+    max-width: 100%;
+    max-height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     animation-name: changeImage;
     animation-delay: 5s;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-   
+    /* border: 2px solid green; */
+    display: flex;
+
 
 }
 

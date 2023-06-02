@@ -1,5 +1,4 @@
 import styles from '@/styles/fpitems.module.css'
-import Image from 'next/image'
 import { useContext } from "react"
 import dataContext from "@/context/dataContext"
 import { renderTitle, renderImage } from '@/pages/bandSawsPage/Items/Items'
@@ -17,9 +16,10 @@ const contentfulData = useContext(dataContext)
     }
 
     return (<>
-        <div className={styles.heading}>
-            <h2>Frequently Purchased Items</h2>
+        <div className="heading w-full flex justify-center text-xl md:2xl  h-14 items-center mb-16">
+            <h2 className='font-bold md:font-extrabold'>Frequently Purchased Items</h2>
         </div>
+
         <div className={styles.main}>
             <Link className={styles.link} href='/heavySawsPage/HeavySawsPage'>
             <div className={styles.cards}>
