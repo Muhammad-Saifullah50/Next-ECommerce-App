@@ -1,14 +1,5 @@
 
-.main {
-    margin: -6vh auto;
-    width: 89%;
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-between;
-    height: 65vh;
-    padding: auto auto;
 
-}
 
 .cards {
     /* border: 2px solid purple; */
