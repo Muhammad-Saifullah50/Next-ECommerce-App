@@ -10,7 +10,7 @@ import Link from 'next/link'
 export const renderTitle = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <h3 className='text-lg' key={item.sys.id}>{item?.fields?.title}</h3> : null
+    return item ? <h3 className='text-lg font-bold' key={item.sys.id}>{item?.fields?.title}</h3> : null
 
 }
 
@@ -48,70 +48,81 @@ const Items = () => {
     return (
         <>
             <div className="itembox">
-                <div className="items flex justify-between rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56 ">
-                    <div className="heading w-full">
+                <div className="itempage-items ">
+                    <div className="itempage-itemheading ">
                         {renderTitle('7sceAfoiIoR9lWTij4uubi', contentfulData)}
-
-                        <div className="rateprice">
-
-                            {renderPrice('7sceAfoiIoR9lWTij4uubi', contentfulData)}
-                            {renderRating('7sceAfoiIoR9lWTij4uubi', contentfulData)}
-
+                    </div>
+                    <div className="bottom flex justify-between ">
+                        <div className="details  ">
+                            <div className="itempage-itemrateprice">
+                                {renderPrice('7sceAfoiIoR9lWTij4uubi', contentfulData)}
+                                {renderRating('7sceAfoiIoR9lWTij4uubi', contentfulData)}
+                            </div>
+                            <div className="btn flex justify-center">
+                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                    <button className="itempage-button">Read More</button>
+                                </Link>
+                            </div>
                         </div>
-                        
-                        <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'><button className="button">Read More</button></Link>
-
+                        <div className="itempage-image ">
+                            {renderImage('3yVcW9wxP135N934utsvAo', 'alt', contentfulData)}
+                        </div>
                     </div>
-
-                    <div className="image">
-                        {renderImage('3yVcW9wxP135N934utsvAo', 'alt', contentfulData)}
-                    </div>
-
                 </div>
-                <div className="items flex justify-between rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56">
-                    <div className="heading w-full">
+
+
+                <div className="itempage-items ">
+                    <div className="itempage-itemheading ">
                         {renderTitle('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
-
-                        <div className="rateprice">
-
-                            {renderPrice('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
-                            {renderRating('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
-
+                    </div>
+                    <div className="bottom flex ">
+                        <div className="details ">
+                            <div className="itempage-itemrateprice">
+                                {renderPrice('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
+                                {renderRating('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
+                            </div>
+                            <div className="btn flex justify-center">
+                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                    <button className="itempage-button">Read More</button>
+                                </Link>
+                            </div>
                         </div>
-                        
-                        <Link href='/bandSawsPage/Desc/Desc-M-003/Desc_M_003'><button className="button">Read More</button></Link>
-
+                        <div className="itempage-image">
+                            {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'alt', contentfulData)}
+                        </div>
                     </div>
-
-                    <div className="image">
-                        {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'alt', contentfulData)}
-                    </div>
-
                 </div>
-                <div className="items flex justify-between rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56">
-                    <div className="heading w-full">
+                <div className="itempage-items ">
+                    <div className="itempage-itemheading ">
                         {renderTitle('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
-
-                        <div className="rateprice">
-
-                            {renderPrice('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
-                            {renderRating('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
-
+                    </div>
+                    <div className="bottom flex ">
+                        <div className="details ">
+                            <div className="itempage-itemrateprice">
+                                {renderPrice('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
+                                {renderRating('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
+                            </div>
+                            <div className="btn flex justify-center">
+                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                    <button className="itempage-button">Read More</button>
+                                </Link>
+                            </div>
                         </div>
-                        
-                        <Link href='/bandSawsPage/Desc/Desc-M-002/Desc_M_002'><button className="button">Read More</button></Link>
-
+                        <div className="itempage-image">
+                            {renderImage('4thrwDMdiKLXzVYfSGLHSV', 'alt', contentfulData)}
+                        </div>
                     </div>
-
-                    <div className="image">
-                        {renderImage('4thrwDMdiKLXzVYfSGLHSV', 'alt', contentfulData)}
-                    </div>
-
                 </div>
             </div>
         </>
     )
 }
+
 export default Items
+
+
+
+
+
 
 

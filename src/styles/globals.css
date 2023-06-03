@@ -16,3 +16,18 @@ body {
   font-family: 'Baloo Bhai 2', cursive;
   background-color: #f0f3ff;
 }
+.itempage-items{
+  @apply rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-fit py-3
+}
+.itempage-itemheading{
+  @apply flex justify-center
+}
+.itempage-itemrateprice{
+  @apply flex w-1/2 my-2 mx-6
+}
+.itempage-button{
+  @apply  bg-yellow-500 px-3 py-1 my-2
+}
+.itempage-image{
+  @apply mx-auto w-1/2
+}

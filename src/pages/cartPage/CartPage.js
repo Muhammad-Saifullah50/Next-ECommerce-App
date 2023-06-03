@@ -1,4 +1,3 @@
-import styles from '@/styles/global-category-pages.module.css'
 import cartstyles from '@/styles/cart.module.css'
 import Header from '@/components/header/Header'
 import CartList from './cartList/CartList'
