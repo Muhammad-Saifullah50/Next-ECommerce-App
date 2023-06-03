@@ -1,4 +1,3 @@
-import styles from '@/styles/global-items.module.css'
 import { useContext } from 'react'
 import dataContext from '@/context/dataContext'
 import Image from 'next/image'
@@ -11,7 +10,7 @@ import Link from 'next/link'
 export const renderTitle = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <h3 key={item.sys.id}>{item?.fields?.title}</h3> : null
+    return item ? <h3 className='text-lg' key={item.sys.id}>{item?.fields?.title}</h3> : null
 
 }
 
@@ -48,63 +47,63 @@ const Items = () => {
 
     return (
         <>
-            <div className={styles.itembox}>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
+            <div className="itembox">
+                <div className="items flex justify-between rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56 ">
+                    <div className="heading w-full">
                         {renderTitle('7sceAfoiIoR9lWTij4uubi', contentfulData)}
 
-                        <div className={styles.rateprice}>
+                        <div className="rateprice">
 
                             {renderPrice('7sceAfoiIoR9lWTij4uubi', contentfulData)}
                             {renderRating('7sceAfoiIoR9lWTij4uubi', contentfulData)}
 
                         </div>
                         
-                        <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'><button className={styles.button}>Read More</button></Link>
+                        <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'><button className="button">Read More</button></Link>
 
                     </div>
 
-                    <div className={styles.image}>
+                    <div className="image">
                         {renderImage('3yVcW9wxP135N934utsvAo', 'alt', contentfulData)}
                     </div>
 
                 </div>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
+                <div className="items flex justify-between rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56">
+                    <div className="heading w-full">
                         {renderTitle('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
 
-                        <div className={styles.rateprice}>
+                        <div className="rateprice">
 
                             {renderPrice('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
                             {renderRating('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
 
                         </div>
                         
-                        <Link href='/bandSawsPage/Desc/Desc-M-003/Desc_M_003'><button className={styles.button}>Read More</button></Link>
+                        <Link href='/bandSawsPage/Desc/Desc-M-003/Desc_M_003'><button className="button">Read More</button></Link>
 
                     </div>
 
-                    <div className={styles.image}>
+                    <div className="image">
                         {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'alt', contentfulData)}
                     </div>
 
                 </div>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
+                <div className="items flex justify-between rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56">
+                    <div className="heading w-full">
                         {renderTitle('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
 
-                        <div className={styles.rateprice}>
+                        <div className="rateprice">
 
                             {renderPrice('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
                             {renderRating('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
 
                         </div>
                         
-                        <Link href='/bandSawsPage/Desc/Desc-M-002/Desc_M_002'><button className={styles.button}>Read More</button></Link>
+                        <Link href='/bandSawsPage/Desc/Desc-M-002/Desc_M_002'><button className="button">Read More</button></Link>
 
                     </div>
 
-                    <div className={styles.image}>
+                    <div className="image">
                         {renderImage('4thrwDMdiKLXzVYfSGLHSV', 'alt', contentfulData)}
                     </div>
 

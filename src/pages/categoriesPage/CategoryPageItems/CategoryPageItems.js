@@ -1,4 +1,3 @@
-import styles from '@/styles/categorypage-items.module.css'
 import Image from 'next/image'
 import { useContext } from "react"
 import dataContext from "@/context/dataContext"
@@ -16,7 +15,7 @@ const CategoryPageItems = () => {
     const renderTitle = (id) => {
         const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-        return item ? <h3 key={item.sys.id}>{item?.fields?.title}</h3> : null
+        return item ? <h3 className='font-bold text-base pt-5' key={item.sys.id}>{item?.fields?.title}</h3> : null
 
     }
 
@@ -28,7 +27,7 @@ const CategoryPageItems = () => {
         if (asset) {
             const imageUrl = 'https:' + asset.fields.file.url
 
-            return <Image src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id} />
+            return <Image className='h-[15vh] lg:h-[20vh] w-[15vh] lg:w-[20vh] my-2' src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id} />
 
         }
 
@@ -42,94 +41,106 @@ const CategoryPageItems = () => {
 
 
     return (<>
-        <div className={styles.banner}>
-            <h2>Categories</h2>
+        <div className="banner flex justify-center items-center w-full h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] bg-[url('/images/black.jpg')] bg-no-repeat text-slate-200 ">
+            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold'>Categories</h2>
         </div>
 
-        <div className={styles.categories}>
-            <div className={styles.cardgrid}>
-                <div className={styles.cards}>
+        <div className="categories flex w-full">
+            <div className="cardgrid flex flex-wrap justify-center">
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('1r5GqxlKaejhajWlCJKBpY')}
                     {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'band saw')}
                     {renderPriceRange('1r5GqxlKaejhajWlCJKBpY')}
-                    <Link href='/bandSawsPage/BandSawsPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/bandSawsPage/BandSawsPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('2FeEPy4Bwc4Rlg2WfH5Vum')}
                     {renderImage('6ccFQQznaehaIdvdkr8ooX', 'oscillatory grinder')}
                     {renderPriceRange('2FeEPy4Bwc4Rlg2WfH5Vum')}
-                    <Link href='/oscillatoryGrinderPage/OscillatoryGrinderPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/oscillatoryGrinderPage/OscillatoryGrinderPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('3HsYBYwZOvs144Oolb1UNh')}
                     {renderImage('6vMNCHJuh4JgYhmIYkFWZQ', 'light saw')}
                     {renderPriceRange('3HsYBYwZOvs144Oolb1UNh')}
-                    <Link href='/lightSawsPage/LightSawsPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/lightSawsPage/LightSawsPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('2XUe7Njq7CcFT5NLEY2qKd')}
                     {renderImage('29fPL5QFfyWPxCAZ0pkiQz', 'saw image')}
                     {renderPriceRange('2XUe7Njq7CcFT5NLEY2qKd')}
-                    <Link href='/heavySawsPage/HeavySawsPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/heavySawsPage/HeavySawsPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('69DvSE0PiR3lHL59J0UDAn')}
                     {renderImage('5dfnNWPtRhjV9aidvKNEGh', 'drill image')}
                     {renderPriceRange('69DvSE0PiR3lHL59J0UDAn')}
-                    <Link href='/drillPage/DrillPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/drillPage/DrillPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('1uFjdcSUky6zKKj2iW17tP')}
                     {renderImage('28uDfdCuQxxxuzCMwiXQWT', 'tool boxes')}
                     {renderPriceRange('1uFjdcSUky6zKKj2iW17tP')}
-                    <Link href='/toolboxPage/ToolboxPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/toolboxPage/ToolboxPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('3N4myZ4d9WUSKS8cQOZhEl')}
                     {renderImage('4mKPrdHCD0HCi93hgvar6G', 'air blower')}
                     {renderPriceRange('3N4myZ4d9WUSKS8cQOZhEl')}
-                    <Link href='/airBlowerPage/AirBlowerPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/airBlowerPage/AirBlowerPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('63IYjassGWyuEvwGmSgmr')}
                     {renderImage('1thaKzAhUAhdU3jf2XzW7w', 'angle grinder')}
                     {renderPriceRange('63IYjassGWyuEvwGmSgmr')}
-                    <Link href='/angleGrinderPage/AngleGrinderPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/angleGrinderPage/AngleGrinderPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('2LKFehcJZ2ZeP5lzZ43YkD')}
                     {renderImage('Qybq2kbrlxWZ7FcK0WUPd', 'compressor')}
                     {renderPriceRange('2LKFehcJZ2ZeP5lzZ43YkD')}
-                    <Link href='/rotaryCompressorPage/RotaryCompressorPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/rotaryCompressorPage/RotaryCompressorPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('4bBfP2moIvvRJV8tTjPoC3')}
                     {renderImage('3cv9gZ8URV4IiI6lpmHKBE', 'polisher')}
                     {renderPriceRange('4bBfP2moIvvRJV8tTjPoC3')}
-                    <Link href='/polishersPage/PolisherPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/polishersPage/PolisherPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('4aFepZTkhNpPcj4MVhyAVj')}
                     {renderImage('6M9cqMoRwwyoTrGWdpgyFl', 'stapler')}
                     {renderPriceRange('4aFepZTkhNpPcj4MVhyAVj')}
-                    <Link href='/staplerPage/StaplerPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/staplerPage/StaplerPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
-                <div className={styles.cards}>
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] lg:w-[40vh] h-[30vh] lg:h-[40vh] mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg ">
                     {renderTitle('433Z0st7xwyTiXiRwR0fLr')}
                     {renderImage('2dVLKUXcxYs98j9NSnt1ag', 'miscellanous')}
                     {renderPriceRange('433Z0st7xwyTiXiRwR0fLr')}
-                    <Link href='/miscPage/MiscPage'><button className={styles.btn}>Explore</button></Link>
+                    <Link href='/miscPage/MiscPage'>
+                        <button className="btn bg-yellow-500 px-7 py-[2px]">Explore</button></Link>
 
                 </div>
             </div>
@@ -138,3 +149,40 @@ const CategoryPageItems = () => {
 }
 
 export default CategoryPageItems
+
+
+
+
+
+// 
+// }
+// .cards h3{
+//     font-size: 1.3rem;
+// }
+// .cards img{
+//     margin-top: 1vh;
+//     height: 38vh;
+//     width: 38vh;
+// }
+// .cards p{
+//     font-size: 1.4rem;
+// }
+
+// 
+// }
+// .btn{
+//     color: black;
+//     background-color: #F9E722;
+//     width: 20vw;
+//     height: 4vh;
+//     border-radius: 5px;
+//     font-size: 14px;
+//     font-weight: bold;
+//     font-family: 'Baloo Bhai 2', cursive;
+//     font-size: 16px;
+
+// }
+// .btn:hover{
+//     color: #F9E722;
+//     background-color: black;
+// }

@@ -1,4 +1,3 @@
-import styles from '@/styles/fpitems.module.css'
 import { useContext } from "react"
 import dataContext from "@/context/dataContext"
 import { renderTitle, renderImage } from '@/pages/bandSawsPage/Items/Items'
@@ -24,7 +23,7 @@ const FPItems = () => {
 
             <Link className="link" href='/heavySawsPage/HeavySawsPage'>
 
-                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] h-[30vh]  mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg">
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] h-[35vh]  mx-5 my-5  hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg">
 
 
                     <div className="fptitle text-lg">{renderTitle('1b2jWRC4nHnINbXflCmubH', contentfulData)}</div>
@@ -36,7 +35,7 @@ const FPItems = () => {
             </Link>
             <Link className="link" href='staplerPage/StaplerPage'>
 
-                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] h-[30vh] mx-5 my-5 hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg">
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] h-[35vh] mx-5 my-5 hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg">
 
                     <div className="fptitle text-lg">{renderTitle('5NyPZs288xX8CXZdaU2KQE', contentfulData)}</div>
 
@@ -47,7 +46,7 @@ const FPItems = () => {
             </Link>
             <Link className="link" href='bandSawsPage/BandSawsPage'>
 
-                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] h-[30vh] mx-5 my-5 hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg">
+                <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] h-[35vh] mx-5 my-5 hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg">
 
 
 

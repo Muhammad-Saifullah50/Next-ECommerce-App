@@ -1,15 +1,14 @@
 import Header from "@/components/header/Header"
 import Items from "./Items/Items"
 import ApiDataState from "@/context/dataState"
-import styles from '@/styles/global-category-pages.module.css'
 import Footer from "@/components/Footer/Footer"
 
 const LightSawsPage = () => {
 
     return (<>
         <Header />
-        <div className={styles.banner}>
-            <h2> Dewalt Classic Light Saws </h2>
+        <div className="banner flex justify-center items-center w-full h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] bg-[url('/images/black.jpg')] bg-no-repeat text-slate-200">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold"> Dewalt Classic Light Saws </h2>
         </div>
         <ApiDataState>
             <Items />
