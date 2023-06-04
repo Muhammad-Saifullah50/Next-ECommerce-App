@@ -10,7 +10,7 @@ const Desc_M_026 = () => {
         <Header />
         <div className={styles.banner}>
            <Link href='/miscPage/MiscPage'> <button className={styles.btn}>Go Back</button> </Link>
-            <h2>DeWalt Nail Gun Pneumatics Tool M-026</h2>
+            <h2 className='font-bold'>DeWalt Nail Gun Pneumatics Tool M-026</h2>
         </div>
         <ApiDataState>
                 <Page />

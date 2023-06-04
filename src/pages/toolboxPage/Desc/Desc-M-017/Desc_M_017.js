@@ -10,7 +10,7 @@ const Desc_M_017 = () => {
         <Header />
         <div className={styles.banner}>
            <Link href='/toolboxPage/ToolboxPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2>DeWalt Multipurpose Toolbox M-017</h2>
+            <h2 className='font-bold'>DeWalt Multipurpose Toolbox M-017</h2>
         </div>
         <ApiDataState>
                 <Page />

@@ -10,7 +10,7 @@ const Desc_M_003 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/bandSawsPage/BandSawsPage'> <button className={styles.btn}>Go Back</button>
-</Link>            <h2>DeWalt Band Saw M-003</h2>
+</Link>            <h2 className='font-bold'>DeWalt Band Saw M-003</h2>
         </div>
         <ApiDataState>
                 <Page />

@@ -16,18 +16,34 @@ body {
   font-family: 'Baloo Bhai 2', cursive;
   background-color: #f0f3ff;
 }
-.itempage-items{
-  @apply rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-fit py-3
+
+/* styles fior cards in category page */
+.categorypage-cards {
+  @apply flex flex-col items-center rounded-xl bg-white w-[40vh] h-[40vh] mx-5 my-5 hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg
 }
-.itempage-itemheading{
-  @apply flex justify-center
+
+/* styles for banner of category pages */
+.categorypage-banner {
+  @apply flex justify-center items-center w-full h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] bg-[url('/images/black.jpg')] bg-no-repeat text-slate-200
 }
-.itempage-itemrateprice{
-  @apply flex w-1/2 my-2 mx-6 sm:flex sm:flex-col sm:w-36
+
+/* styles for category pages of products */
+.itempage-items {
+  @apply rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56 py-3
 }
-.itempage-button{
-  @apply  bg-yellow-500 px-3 py-1 my-2
+
+.itempage-itemheading {
+  @apply flex justify-center even:font-bold odd:font-bold
 }
-.itempage-image{
+
+.itempage-itemrateprice {
+  @apply flex w-1/2 my-2 mx-6 sm:flex sm:flex-col sm:w-36 even:text-lg odd:text-lg
+}
+
+.itempage-button {
+  @apply bg-yellow-500 px-3 py-1 my-2 -ml-12
+}
+
+.itempage-image {
   @apply mx-auto sm:absolute right-10 my-auto
 }

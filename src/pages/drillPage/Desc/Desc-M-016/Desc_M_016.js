@@ -10,7 +10,7 @@ const Desc_M_016 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/drillPage/DrillPage'> <button className={styles.btn}>Go Back</button>
-</Link>            <h2>DeWalt Heavy Duty Spanner Drill M-016</h2>
+</Link>            <h2 className='font-bold'>DeWalt Heavy Duty Spanner Drill M-016</h2>
         </div>
         <ApiDataState>
                 <Page />

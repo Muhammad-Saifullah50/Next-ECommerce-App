@@ -9,7 +9,7 @@ const Desc_M_014 = () => {
     return (<>
         <Header />
         <div className={styles.banner}>
-        <Link href='/heavySawsPage/HeavySawsPage'> <button className={styles.btn}>Go Back</button> </Link>              <h2>DeWalt Compact Slide Miter Saw M-014
+        <Link href='/heavySawsPage/HeavySawsPage'> <button className={styles.btn}>Go Back</button> </Link>              <h2 className='font-bold'>DeWalt Compact Slide Miter Saw M-014
             </h2>
         </div>
         <ApiDataState>

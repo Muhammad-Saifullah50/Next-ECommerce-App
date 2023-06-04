@@ -10,7 +10,7 @@ const Desc_M_010 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/lightSawsPage/LightSawsPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2>DeWalt Classis Wood Crusher Saw M-010
+            <h2 className='font-bold'>DeWalt Classis Wood Crusher Saw M-010
 
 
             </h2>

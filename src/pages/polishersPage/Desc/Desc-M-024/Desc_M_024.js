@@ -10,7 +10,7 @@ const Desc_M_024 = () => {
         <Header />
         <div className={styles.banner}>
            <Link href='/polishersPage/PolisherPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2>DeWalt Heavy Duty Polisher M-024
+            <h2 className='font-bold'>DeWalt Heavy Duty Polisher M-024
 </h2>
         </div>
         <ApiDataState>

@@ -11,7 +11,7 @@ const Desc_M_018 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/toolboxPage/ToolboxPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2>DeWalt Heavy Duty ELectrician Toolkit M-018</h2>
+            <h2 className='font-bold'>DeWalt Heavy Duty ELectrician Toolkit M-018</h2>
         </div>
         <ApiDataState>
             <Page />

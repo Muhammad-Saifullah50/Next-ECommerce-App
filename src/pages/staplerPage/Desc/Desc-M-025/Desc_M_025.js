@@ -10,7 +10,7 @@ const Desc_M_025 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/staplerPage/StaplerPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2>DeWalt Heavy Duty Stapler M-025</h2>
+            <h2 className='font-bold'>DeWalt Heavy Duty Stapler M-025</h2>
         </div>
         <ApiDataState>
                 <Page />

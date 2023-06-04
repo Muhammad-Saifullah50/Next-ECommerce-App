@@ -10,7 +10,7 @@ const Desc_M_027 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/miscPage/MiscPage'> <button className={styles.btn}>Go Back</button> </Link>
-            <h2>DeWalt Classic Heat Gun M-027</h2>
+            <h2 className='font-bold'>DeWalt Classic Heat Gun M-027</h2>
         </div>
         <ApiDataState>
                 <Page />

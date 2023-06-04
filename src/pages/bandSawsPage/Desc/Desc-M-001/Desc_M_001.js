@@ -11,7 +11,7 @@ const Desc_M_001 = () => {
         <div className={styles.banner}>
            <Link href='/bandSawsPage/BandSawsPage'> <button className={styles.btn}>Go Back</button>
            </Link>
-            <h2>DeWalt Circular Saw Tool Cordless M-001</h2>
+            <h2 className='font-bold'>DeWalt Circular Saw Tool Cordless M-001</h2>
         </div>
         <ApiDataState>
             <Page />

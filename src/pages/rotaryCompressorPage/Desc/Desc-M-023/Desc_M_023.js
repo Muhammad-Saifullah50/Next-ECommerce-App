@@ -10,7 +10,7 @@ const Desc_M_023 = () => {
         <Header />
         <div className={styles.banner}>
            <Link href='/rotaryCompressorPage/RotaryCompressorPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2>DeWalt Heavy Rotary Compressor M-023</h2>
+            <h2 className='font-bold'>DeWalt Heavy Rotary Compressor M-023</h2>
         </div>
         <ApiDataState>
                 <Page />

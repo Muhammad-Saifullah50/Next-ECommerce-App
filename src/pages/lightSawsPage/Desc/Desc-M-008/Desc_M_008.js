@@ -11,7 +11,7 @@ const Desc_M_008 = () => {
         <Header />
         <div className={styles.banner}>
            <Link href='/lightSawsPage/LightSawsPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2> DeWalt Classic Saw M-008</h2>
+            <h2 className='font-bold'> DeWalt Classic Saw M-008</h2>
         </div>
         <ApiDataState>
             <Page />

@@ -10,7 +10,7 @@ const Desc_M_002 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/bandSawsPage/BandSawsPage'> <button className={styles.btn}>Go Back</button>
-  </Link>          <h2>DeWalt Heavy Duty Miter Joint M-002</h2>
+  </Link>          <h2 className='font-bold'>DeWalt Heavy Duty Miter Joint M-002</h2>
     
         </div>
         <ApiDataState>

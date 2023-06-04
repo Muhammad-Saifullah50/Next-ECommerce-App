@@ -10,7 +10,7 @@ const Desc_M_013 = () => {
         <Header />
         <div className={styles.banner}>
         <Link href='/heavySawsPage/HeavySawsPage'> <button className={styles.btn}>Go Back</button> </Link>  
-            <h2>DeWalt Heavy Duty Table Saw M-013
+            <h2 className='font-bold'>DeWalt Heavy Duty Table Saw M-013
             </h2>
         </div>
         <ApiDataState>

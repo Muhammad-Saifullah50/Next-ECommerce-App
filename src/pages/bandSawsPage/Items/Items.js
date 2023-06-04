@@ -10,7 +10,7 @@ import Link from 'next/link'
 export const renderTitle = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <h3 className='text-lg font-bold' key={item.sys.id}>{item?.fields?.title}</h3> : null
+    return item ? <h3 className='text-lg ' key={item.sys.id}>{item?.fields?.title}</h3> : null
 
 }
 

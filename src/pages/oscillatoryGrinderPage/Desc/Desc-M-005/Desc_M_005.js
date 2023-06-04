@@ -11,7 +11,7 @@ const Desc_M_005 = () => {
         <div className={styles.banner}>
           <Link href='/oscillatoryGrinderPage/OscillatoryGrinderPage'>  <button className={styles.btn}>Go Back</button> </Link>           
 
-            <h2>DeWalt Blunt Oscillatory Grinder M-005</h2>
+            <h2 className='font-bold'>DeWalt Blunt Oscillatory Grinder M-005</h2>
         </div>
         <ApiDataState>
             <Page />
