@@ -14,8 +14,8 @@ const CartPage = () => {
     }
     return (<>
         <Header />
-        <div className={styles.banner}>
-            <h2> My Cart </h2>
+        <div className="categorypage-banner">
+            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold'> My Cart </h2>
         </div>
         <CartList />
 
