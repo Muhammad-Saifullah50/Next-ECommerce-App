@@ -23,11 +23,11 @@ body {
   @apply flex justify-center
 }
 .itempage-itemrateprice{
-  @apply flex w-1/2 my-2 mx-6
+  @apply flex w-1/2 my-2 mx-6 sm:flex sm:flex-col sm:w-36
 }
 .itempage-button{
   @apply  bg-yellow-500 px-3 py-1 my-2
 }
 .itempage-image{
-  @apply mx-auto w-1/2
+  @apply mx-auto sm:absolute right-10 my-auto
 }

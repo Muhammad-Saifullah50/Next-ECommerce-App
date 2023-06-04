@@ -22,7 +22,7 @@ export const renderImage = (id, alt, contentfulData) => {
     if (asset) {
         const imageUrl = 'https:' + asset.fields.file.url
 
-        return <Image src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id} />
+        return <Image className='h-[125px]' src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id} />
 
     }
 
@@ -30,14 +30,14 @@ export const renderImage = (id, alt, contentfulData) => {
 export const renderPrice = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <p key={item.sys.id}>Price: {item?.fields?.price}</p> : null;
+    return item ? <p  key={item.sys.id}>Price: {item?.fields?.price}</p> : null;
 
 
 }
 export const renderRating = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <p key={item.sys.id}>Rating: {item?.fields?.rating}</p> : null
+    return item ? <p  key={item.sys.id}>Rating: {item?.fields?.rating}</p> : null
 
 }
 const Items = () => {
@@ -53,8 +53,8 @@ const Items = () => {
                         {renderTitle('7sceAfoiIoR9lWTij4uubi', contentfulData)}
                     </div>
                     <div className="bottom flex justify-between ">
-                        <div className="details  ">
-                            <div className="itempage-itemrateprice">
+                        <div className="details mx-auto sm:ml-0 ">
+                            <div className="itempage-itemrateprice ">
                                 {renderPrice('7sceAfoiIoR9lWTij4uubi', contentfulData)}
                                 {renderRating('7sceAfoiIoR9lWTij4uubi', contentfulData)}
                             </div>
@@ -75,9 +75,9 @@ const Items = () => {
                     <div className="itempage-itemheading ">
                         {renderTitle('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
                     </div>
-                    <div className="bottom flex ">
-                        <div className="details ">
-                            <div className="itempage-itemrateprice">
+                    <div className="bottom flex justify-between">
+                        <div className="details mx-auto sm:ml-0">
+                            <div className="itempage-itemrateprice ">
                                 {renderPrice('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
                                 {renderRating('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
                             </div>
@@ -87,7 +87,7 @@ const Items = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="itempage-image">
+                        <div className="itempage-image ">
                             {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'alt', contentfulData)}
                         </div>
                     </div>
@@ -96,8 +96,8 @@ const Items = () => {
                     <div className="itempage-itemheading ">
                         {renderTitle('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
                     </div>
-                    <div className="bottom flex ">
-                        <div className="details ">
+                    <div className="bottom flex justify-between">
+                        <div className="details mx-auto sm:ml-0">
                             <div className="itempage-itemrateprice">
                                 {renderPrice('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
                                 {renderRating('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
