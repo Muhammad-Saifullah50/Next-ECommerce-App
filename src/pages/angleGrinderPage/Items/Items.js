@@ -22,7 +22,7 @@ const Items = () => {
                                 {renderRating('7lfNNd2Oqn1oqaRJBO51pG', contentfulData)}
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/angleGrinderPage/Desc/Desc-M-022/Desc_M_022'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>
@@ -45,7 +45,7 @@ const Items = () => {
                                 {renderRating('4NquC15vKDwmVTxJO0idyD', contentfulData)}
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/angleGrinderPage/Desc/Desc-M-021/Desc_M_021'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>

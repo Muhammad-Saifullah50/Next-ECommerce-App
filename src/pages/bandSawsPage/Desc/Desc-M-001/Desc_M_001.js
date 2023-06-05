@@ -1,4 +1,3 @@
-import styles from '@/styles/global-desc.module.css'
 import ApiDataState from '@/context/dataState'
 import Header from '@/components/header/Header'
 import Footer from '@/components/Footer/Footer'
@@ -8,10 +7,10 @@ const Desc_M_001 = () => {
 
     return (<>
         <Header />
-        <div className={styles.banner}>
-           <Link href='/bandSawsPage/BandSawsPage'> <button className={styles.btn}>Go Back</button>
+        <div className="desc-banner">
+           <Link href='/bandSawsPage/BandSawsPage'> <button className="back-btn">Go Back</button>
            </Link>
-            <h2 className='font-bold'>DeWalt Circular Saw Tool Cordless M-001</h2>
+            <h2 className='desc-h2'>DeWalt Circular Saw Tool Cordless M-001</h2>
         </div>
         <ApiDataState>
             <Page />

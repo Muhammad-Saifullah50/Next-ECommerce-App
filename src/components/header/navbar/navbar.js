@@ -4,7 +4,7 @@ const navbar = () => {
 
     return (<>
         <nav >
-            <ul className="navbar border-2 border-orange-500 flex bg-yellow-500 justify-evenly relative z-10">
+            <ul className="navbar  flex bg-yellow-500 justify-evenly relative z-10">
                 
                 <Link href='/'><li className=' list-none py-2 px-7 mx-1 my-0 bg-yellow-500 rounded-sm text-center w-auto hover:bg-black  text-black hover:text-yellow-500'>Home</li></Link>
                 

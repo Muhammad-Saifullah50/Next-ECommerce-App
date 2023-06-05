@@ -23,7 +23,7 @@ const Items = () => {
 
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/drillPage/Desc/Desc-M-015/Desc_M_015'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>
@@ -47,7 +47,7 @@ const Items = () => {
 
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/drillPage/Desc/Desc-M-016/Desc_M_016'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>

@@ -23,7 +23,7 @@ const Items = () => {
 
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/lightSawsPage/Desc/Desc-M-008/Desc_M_008'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>
@@ -47,7 +47,7 @@ const Items = () => {
                                 {renderRating('6rQjZ1rSswD57AUiTVyOlg', contentfulData)}
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/lightSawsPage/Desc/Desc-M-009/Desc_M_009'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>
@@ -70,7 +70,7 @@ const Items = () => {
 
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/lightSawsPage/Desc/Desc-M-011/Desc_M_011'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>
@@ -92,7 +92,7 @@ const Items = () => {
                                 {renderRating('1WcsUOH8ngdpUZU7u0CqQB', contentfulData)}
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/lightSawsPage/Desc/Desc-M-010/Desc_M_010'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>

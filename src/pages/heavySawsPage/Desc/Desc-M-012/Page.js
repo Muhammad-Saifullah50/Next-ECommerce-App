@@ -6,51 +6,51 @@ import Counter from '@/components/counter/Counter'
 import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
 import AddCartBtn from '@/components/addCartBtn/AddCartBtn'
 import cartContext from '@/context/cart-context/cartContext'
-import { productId, productName, productPrice,addItemToCart } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
+import { productId, productName, productPrice, addItemToCart } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
 
 const Page = () => {
 
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
-    const {cartItems, setCartItems} = useContext(cartContext)
+    const { cartItems, setCartItems } = useContext(cartContext)
 
     return (<>
-        <div className={styles.page}>
+        <div className="page descpage  ">
 
-            <div className={styles.intro}>
-                <div className={styles.introbox}>
+            <div className="intro descintro">
+                <div className="introbox">
 
-                    <div className={styles.heading}>
+                    <div className="heading descheading">
                         {renderTitle('6DullCU9w90x7BAWyYtWCl', contentfulData)}
                     </div>
-                    <div className={styles.price}>
+                    <div className="price descprice">
                         {renderPrice('6DullCU9w90x7BAWyYtWCl', contentfulData)}
 
                     </div>
-                    <div className={styles.introtext}>
-                        <h3>Introduction</h3>
+                    <div className="introtext">
+                        <h3 className='text-lg font-bold'>Introduction</h3>
                         {renderIntro('6DullCU9w90x7BAWyYtWCl', contentfulData)}
                     </div>
                 </div>
-                <div className={styles.image}>
+                <div className="image descimage">
                     {renderImage('29fPL5QFfyWPxCAZ0pkiQz', 'alt', contentfulData)}
                 </div>
 
             </div>
             <div className={styles.counter}>
                 <Counter />
-                <AddCartBtn onClick={() =>{
+                <AddCartBtn onClick={() => {
                     addItemToCart(
                         productId('6DullCU9w90x7BAWyYtWCl', contentfulData),
                         productName('6DullCU9w90x7BAWyYtWCl', contentfulData),
                         productPrice('6DullCU9w90x7BAWyYtWCl', contentfulData),
-                        cartItems,setCartItems
+                        cartItems, setCartItems
                     )
-                }}/>
+                }} />
 
             </div>
-            <div className={styles.overview}>
-                <h3>Product Overview</h3>
+            <div className="overview descoverview">
+                <h3 className='text-lg font-bold'>Product Overview</h3>
                 {renderOverview('6DullCU9w90x7BAWyYtWCl', contentfulData)}
             </div>
 

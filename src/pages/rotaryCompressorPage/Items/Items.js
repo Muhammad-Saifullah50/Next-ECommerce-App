@@ -22,7 +22,7 @@ const Items = () => {
                                 {renderRating('4V8MkgYjkZrnro9Ik5BWEY', contentfulData)}
                             </div>
                             <div className="btn flex justify-center">
-                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                <Link href='/rotaryCompressorPage/Desc/Desc-M-023/Desc_M_023'>
                                     <button className="itempage-button">Read More</button>
                                 </Link>
                             </div>

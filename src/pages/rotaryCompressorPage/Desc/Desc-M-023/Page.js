@@ -73,34 +73,33 @@ export const addItemToCart = (id, name, price, cartItems, setCartItems) => {
 const Page = () => {
 
     const contentfulData = useContext(dataContext)
-    const {cartItems, setCartItems} = useContext(cartContext)
+    const { cartItems, setCartItems } = useContext(cartContext)
 
     // console.log(contentfulData)
 
     return (<>
-        <div className={styles.page}>
+        <div className="page descpage  ">
 
-            <div className={styles.intro}>
-                <div className={styles.introbox}>
-
-                    <div className={styles.heading}>
+            <div className="intro descintro">
+                <div className="introbox">
+                    <div className="heading descheading">
                         {renderTitle('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData)}
                     </div>
-                    <div className={styles.price}>
+                    <div className="price descprice">
                         {renderPrice('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData)}
 
                     </div>
-                    <div className={styles.introtext}>
-                        <h3>Introduction</h3>
+                    <div className="introtext">
+                        <h3 className='text-lg font-bold'>Introduction</h3>
                         {renderIntro('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData)}
                     </div>
                 </div>
-                <div className={styles.image}>
+                <div className="image descimage">
                     {renderImage('Qybq2kbrlxWZ7FcK0WUPd', 'alt', contentfulData)}
                 </div>
 
             </div>
-            <div className={styles.counter}>
+            <div className="counter">
                 <Counter />
 
 
@@ -111,8 +110,8 @@ const Page = () => {
                 } />
 
             </div>
-            <div className={styles.overview}>
-                <h3>Product Overview</h3>
+            <div className="overview descoverview">
+                <h3 className='text-lg font-bold'>Product Overview</h3>
                 {renderOverview('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData)}
             </div>
 

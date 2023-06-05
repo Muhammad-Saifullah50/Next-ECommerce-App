@@ -1,4 +1,3 @@
-import styles from '@/styles/global-desc-page.module.css'
 import dataContext from '@/context/dataContext'
 import cartContext from '@/context/cart-context/cartContext'
 import { useContext } from 'react'
@@ -14,29 +13,29 @@ const Page = () => {
     // console.log(contentfulData)
 
     return (<>
-        <div className={styles.page}>
+        <div className="page descpage  ">
 
-            <div className={styles.intro}>
-                <div className={styles.introbox}>
+        <div className="intro descintro">
+                <div className="introbox">
 
-                    <div className={styles.heading}>
+                <div className="heading descheading">
                         {renderTitle('1IuGmnKA8KYvaI71h2W97i', contentfulData)}
                     </div>
-                    <div className={styles.price}>
+                    <div className="price descprice">
                         {renderPrice('1IuGmnKA8KYvaI71h2W97i', contentfulData)}
 
                     </div>
-                    <div className={styles.introtext}>
-                        <h3>Introduction</h3>
+                    <div className="introtext">
+                    <h3 className='text-lg font-bold'>Introduction</h3>
                         {renderIntro('1IuGmnKA8KYvaI71h2W97i', contentfulData)}
                     </div>
                 </div>
-                <div className={styles.image}>
+                <div className="image descimage">
                     {renderImage('2m5FKJVIIXLF6S2gCedcjs', 'alt', contentfulData)}
                 </div>
 
             </div>
-            <div className={styles.counter}>
+            <div className="counter">
                 <Counter />
                 <AddCartBtn onClick={() => {
                     addItemToCart(
@@ -49,8 +48,8 @@ const Page = () => {
                 }}/>
 
             </div>
-            <div className={styles.overview}>
-                <h3>Product Overview</h3>
+            <div className="overview descoverview">
+            <h3  className='text-lg font-bold'>Product Overview</h3>
                 {renderOverview('1IuGmnKA8KYvaI71h2W97i', contentfulData)}
             </div>
 

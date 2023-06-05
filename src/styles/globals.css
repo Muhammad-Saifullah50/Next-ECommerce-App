@@ -47,3 +47,37 @@ body {
 .itempage-image {
   @apply mx-auto sm:absolute right-10 my-auto
 }
+
+/* styles for description page back button */
+
+.back-btn{
+  @apply bg-yellow-500 text-black px-2 py-1 ml-6 sm:ml-9 md:ml-12 lg:ml-14 xl:ml-20 mb-5
+}
+/* styles for banner of description pages */
+.desc-banner {
+  @apply flex flex-col justify-center w-full h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] bg-[url('/images/black.jpg')] bg-no-repeat text-slate-200
+}
+.desc-h2{
+  @apply  text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold ml-6 sm:ml-9 md:ml-12 lg:ml-14 xl:ml-20 mb-5
+}
+
+/* styles for page of description */
+
+.descpage{
+  @apply w-[95%] bg-white px-8 py-8
+}
+.descintro{
+  @apply w-full flex flex-col sm:flex-row
+}
+.descheading{
+  @apply flex mb-4 text-xl font-bold
+}
+.descprice{
+  @apply flex mb-4 text-yellow-500 text-xl
+}
+.descimage{
+  @apply flex justify-center items-center mb-9 mt-4
+}
+.descoverview{
+  @apply whitespace-pre-line
+}
