@@ -1,12 +1,14 @@
-import { useState } from "react"
+import { useContext } from "react"
+import counterContext from "@/context/counter-context/counterContext"
 
 
 const Counter = () => {
 
-    const [count, setCount] = useState(1)
+    const {count, setCount} = useContext(counterContext)
 
     const AddCount = () => setCount(count + 1)
     const SubtractCount = () => setCount(count - 1)
+
     return (
         <>
             <div className="counter bg-slate-200 h-10 w-28 flex  items-center">

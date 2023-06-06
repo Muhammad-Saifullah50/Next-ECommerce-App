@@ -5,7 +5,7 @@ import cartContext from '@/context/cart-context/cartContext'
 // console.log([cartItems])
 
 const CartList = () => {
-    const { cartItems, setCartItems } = useContext(cartContext)
+  const { cartItems, setCartItems } = useContext(cartContext)
     console.log(cartItems)
 
 
