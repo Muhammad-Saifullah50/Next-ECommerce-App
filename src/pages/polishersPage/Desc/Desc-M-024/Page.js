@@ -1,4 +1,3 @@
-import styles from '@/styles/global-desc-page.module.css'
 import dataContext from '@/context/dataContext'
 import { useContext } from 'react'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'

@@ -1,4 +1,3 @@
-import styles from '@/styles/global-desc-page.module.css'
 import dataContext from '@/context/dataContext'
 import cartContext from '@/context/cart-context/cartContext'
 import { useContext } from 'react'
@@ -34,7 +33,7 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className={styles.counter}>
+            <div className="counter">
                 <Counter />
                 <AddCartBtn onClick={() => {
                     addItemToCart(
