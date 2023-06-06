@@ -133,7 +133,7 @@
     width: 6rem;
     height: 2rem;
 }
-.btn button {
+/* .btn button {
     position: relative;
     font-family: 'Baloo Bhai 2', cursive;
     font-weight: bold;
@@ -143,11 +143,11 @@
     border: none;
     width: 8rem;
     height: 2rem;
-}
+} */
 
-.btn {
+/* .btn {
     display: flex;
     justify-content: center;
     margin: 2vh auto;
 }
-
+ */

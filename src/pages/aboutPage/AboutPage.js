@@ -1,4 +1,3 @@
-import textstyles from '@/styles/about.module.css'
 import Header from '@/components/header/Header'
 import Footer from '@/components/Footer/Footer'
 const AboutPage = () => {

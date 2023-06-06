@@ -1,4 +1,3 @@
-import styles from '@/styles/global-desc-page.module.css'
 import dataContext from '@/context/dataContext'
 import cartContext from '@/context/cart-context/cartContext'
 import { useContext } from 'react'

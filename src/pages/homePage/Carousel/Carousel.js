@@ -21,7 +21,7 @@ const Carousel = () => {
 
       </div>
       {/* on small screens below carousel */}
-      <div className="carouseltext px-3 py-3  md:hidden ">
+      <div className="carouseltext px-3 py-3  md:hidden">
         <h2 className='text-xl font-semibold '>Professional Power Tools</h2>
         <p className='text-base'>Over the years, we have created professional power tools and equipment that complement your construction and building process.</p>
       </div>

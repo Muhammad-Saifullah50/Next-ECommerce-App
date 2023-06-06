@@ -51,7 +51,7 @@ body {
 /* styles for description page back button */
 
 .back-btn{
-  @apply bg-yellow-500 text-black px-2 py-1 ml-6 sm:ml-9 md:ml-12 lg:ml-14 xl:ml-20 mb-5
+  @apply bg-yellow-500 hover:bg-yellow-400 text-black px-2 py-1 ml-6 sm:ml-9 md:ml-12 lg:ml-14 xl:ml-20 mb-5
 }
 /* styles for banner of description pages */
 .desc-banner {
@@ -64,10 +64,10 @@ body {
 /* styles for page of description */
 
 .descpage{
-  @apply w-[95%] bg-white px-8 py-8
+  @apply w-full bg-white px-8 py-8 md:w-[95%] mx-auto
 }
 .descintro{
-  @apply w-full flex flex-col sm:flex-row
+  @apply w-full  flex flex-col sm:flex-row justify-between
 }
 .descheading{
   @apply flex mb-4 text-xl font-bold
@@ -75,9 +75,16 @@ body {
 .descprice{
   @apply flex mb-4 text-yellow-500 text-xl
 }
+.introbox{
+  @apply sm:w-[60%]
+}
 .descimage{
-  @apply flex justify-center items-center mb-9 mt-4
+  @apply flex justify-center items-center mb-9 mt-4 sm:w-[40%]
 }
 .descoverview{
   @apply whitespace-pre-line
 }
+.counter{
+  @apply flex mb-5 
+}
+

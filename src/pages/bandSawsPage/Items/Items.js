@@ -22,7 +22,7 @@ export const renderImage = (id, alt, contentfulData) => {
     if (asset) {
         const imageUrl = 'https:' + asset.fields.file.url
 
-        return <Image className='h-[125px]' src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id} />
+        return <Image className='' src={imageUrl} width={170} height={170} alt={alt} key={asset.sys.id} />
 
     }
 

@@ -19,9 +19,10 @@ const CartPage = () => {
         </div>
         <CartList />
 
-        <div className={cartstyles.btn}>
-            <button onClick={openDetails}>Proceed</button>
+        <div className="btn flex justify-center my-5">
+            <button className=' bg-green-700 hover:bg-green-600  text-white px-5 py-1 rounded-sm font-bold' onClick={openDetails}>Proceed</button>
         </div>
+
         {/* container part */}
         {showDetails && (
             <div className={cartstyles.container}>
@@ -43,7 +44,7 @@ const CartPage = () => {
 
                     </div>
                     <div className={cartstyles.payment}>
-                        Payment Options:  <div className={styles.cod}><input type="radio" name="pay" id="cod" />
+                        Payment Options:  <div className={cartstyles.cod}><input type="radio" name="pay" id="cod" />
 
                             <label htmlFor="cod">Cash On Delivery</label>
                         </div>

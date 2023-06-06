@@ -35,7 +35,7 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className={styles.counter}>
+            <div className="counter">
                 <Counter />
                 <AddCartBtn onClick={() => {
                     addItemToCart(

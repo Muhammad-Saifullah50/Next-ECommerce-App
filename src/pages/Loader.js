@@ -1,4 +1,3 @@
-import styles from '@/styles/loader.module.css'
 import { ThreeCircles } from 'react-loader-spinner'
 
 
@@ -6,13 +5,13 @@ import Image from 'next/image'
 const Loader = () => {
 
     return (<>
-        <div className={styles.loader}>
-            <div className={styles.logo}>
-                <Image src='/images/dewaltlogo.png' height={250} width={500} alt='logo'>
+        <div className="loader flex justify-center items-center flex-col h-[100vh]">
+            <div className="logo">
+                <Image className='-mt-[15vh] w-[13rem] h-[7rem]' src='/images/dewaltlogo.png' height={250} width={500} alt='logo'>
 
                 </Image>
             </div>
-            <div className={styles.circles}>
+            <div className="circles">
                 <ThreeCircles
                     height="90"
                     width="90"

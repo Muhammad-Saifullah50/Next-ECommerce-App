@@ -16,7 +16,7 @@ const Page = () => {
          <div className="page descpage  ">
 
 <div className="intro descintro">
-                <div className={styles.introbox}>
+                <div className="introbox">
 
                 <div className="heading descheading">
                         {renderTitle('23OuUIipZC3nsBWFBW0lKv', contentfulData)}
@@ -25,7 +25,7 @@ const Page = () => {
                         {renderPrice('23OuUIipZC3nsBWFBW0lKv', contentfulData)}
 
                     </div>
-                    <div className={styles.introtext}>
+                    <div className="introtext">
                     <h3 className='text-lg font-bold'>Introduction</h3>
                         {renderIntro('23OuUIipZC3nsBWFBW0lKv', contentfulData)}
                     </div>
@@ -35,7 +35,7 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className={styles.counter}>
+            <div className="counter">
                 <Counter />
                 <AddCartBtn  onClick={() => {
                     addItemToCart(
