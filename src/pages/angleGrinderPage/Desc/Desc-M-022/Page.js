@@ -1,6 +1,6 @@
 import dataContext from '@/context/dataContext'
 import cartContext from '@/context/cart-context/cartContext'
-import { useContext } from 'react'
+import { useContext,useState } from 'react'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'
 import Counter from '@/components/counter/Counter'
 import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
@@ -11,6 +11,8 @@ const Page = () => {
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
     const { cartItems, setCartItems } = useContext(cartContext)
+    const [quantity, setQuantity] = useState(1)
+
 
     return (<>
         <div className="page descpage  ">
@@ -37,12 +39,14 @@ const Page = () => {
 
             </div>
             <div className="counter">
-                <Counter />
+            <Counter quantity={quantity} setQuantity={setQuantity} />
                 <AddCartBtn onClick={() => {
+                      alert(`${quantity} items added to cart`)
+                      setQuantity(quantity)
                     addItemToCart(
                         productId('2jmUDvXuiBjBkBRjWHAvgV', contentfulData),
                         productName('2jmUDvXuiBjBkBRjWHAvgV', contentfulData),
-                        productPrice('2jmUDvXuiBjBkBRjWHAvgV', contentfulData),
+                        productPrice('2jmUDvXuiBjBkBRjWHAvgV', contentfulData),quantity,
                         cartItems, setCartItems
                     )
                 }} />

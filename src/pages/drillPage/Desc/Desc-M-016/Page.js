@@ -1,26 +1,28 @@
 import dataContext from '@/context/dataContext'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'
 import Counter from '@/components/counter/Counter'
 import { renderIntro, renderOverview } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
 import AddCartBtn from '@/components/addCartBtn/AddCartBtn'
 import cartContext from '@/context/cart-context/cartContext'
-import { productId, productName, productPrice,addItemToCart } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
+import { productId, productName, productPrice, addItemToCart } from '@/pages/rotaryCompressorPage/Desc/Desc-M-023/Page'
 
 const Page = () => {
 
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
-    const {cartItems, setCartItems} = useContext(cartContext)
+    const { cartItems, setCartItems } = useContext(cartContext)
+    const [quantity, setQuantity] = useState(1)
+
 
     return (<>
-      <div className="page descpage  ">
+        <div className="page descpage  ">
 
-<div className="intro descintro">
-    <div className="introbox">
+            <div className="intro descintro">
+                <div className="introbox">
 
-    <div className="heading descheading">
-                                {renderTitle('2rX37QL5HnsAck5gaSb08W', contentfulData)}
+                    <div className="heading descheading">
+                        {renderTitle('2rX37QL5HnsAck5gaSb08W', contentfulData)}
                     </div>
                     <div className="price descprice">
                         {renderPrice('2rX37QL5HnsAck5gaSb08W', contentfulData)}
@@ -37,15 +39,17 @@ const Page = () => {
 
             </div>
             <div className="counter">
-                <Counter />
+                <Counter quantity={quantity} setQuantity={setQuantity} />
                 <AddCartBtn onClick={() => {
+                    alert(`${quantity} items added to cart`)
+                    setQuantity(quantity)
                     addItemToCart(
                         productId('2rX37QL5HnsAck5gaSb08W', contentfulData),
                         productName('2rX37QL5HnsAck5gaSb08W', contentfulData),
-                        productPrice('2rX37QL5HnsAck5gaSb08W', contentfulData),
-                        cartItems,setCartItems
+                        productPrice('2rX37QL5HnsAck5gaSb08W', contentfulData),quantity,
+                        cartItems, setCartItems
                     )
-                }}/>
+                }} />
 
             </div>
             <div className="overview descoverview">

@@ -3,7 +3,6 @@ import Loader from './Loader'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import CartState from '@/context/cart-context/cartState';
-import CounterState from '@/context/counter-context/counterState';
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -50,13 +49,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <CartState>
-        <CounterState>
         {loading ? (
           <Loader />
         ) : (
           <Component {...pageProps} />
         )}
-        </CounterState>
       </CartState>
     </>
   );

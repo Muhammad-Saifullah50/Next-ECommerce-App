@@ -24,7 +24,7 @@ const CartList = () => {
             <div className="quantity w-[12%]"><h3>Quantity</h3></div>
             <div className="price w-[20%]"><h3>Price</h3></div>
             <div className="button w-[18%]">
-                <button className='bg-red-600 text-white px-2 md:px-4 py-1 rounded-sm' onClick={deleteAll}>Empty</button>
+                <button className='bg-red-600 hover:bg-red-500 text-white px-2 md:px-4 py-1 rounded-sm' onClick={deleteAll}>Empty</button>
             </div>
 
         </div>
@@ -37,7 +37,7 @@ const CartList = () => {
                     <div className="quantity w-[12%]"> <p>{item.quantity}</p></div>
                     <div className="price w-[20%]"> <p>{item.price}</p></div>
                     <div className="button w-[18%]">
-                        <button className='bg-red-600 text-white px-1 md:px-3 py-1 rounded-sm' onClick={() => deleteItem(item.id)}>Remove</button>
+                        <button className='bg-red-600 hover:bg-red-500 text-white px-1 md:px-3 py-1 rounded-sm' onClick={() => deleteItem(item.id)}>Remove</button>
                     </div>
                 </div>
             )

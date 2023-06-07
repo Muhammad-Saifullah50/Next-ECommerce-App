@@ -1,6 +1,6 @@
 import dataContext from '@/context/dataContext'
 import cartContext from '@/context/cart-context/cartContext'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'
 import Counter from '@/components/counter/Counter'
 import AddCartBtn from '@/components/addCartBtn/AddCartBtn'
@@ -53,15 +53,13 @@ export const productPrice = (id, contentfulData) => {
     return item?.fields?.price
 }
 
-export const addItemToCart = (id, name, price, cartItems, setCartItems) => {
-
+export const addItemToCart = (id, name, price, quantity, cartItems, setCartItems) => {
     const newItem = {
         id: id,
         name: name,
         price: price,
-        quantity: 1
-
-    }
+        quantity: quantity
+    };
     setCartItems([...cartItems, newItem]);
     // console.log([cartItems])
 
@@ -73,6 +71,7 @@ const Page = () => {
 
     const contentfulData = useContext(dataContext)
     const { cartItems, setCartItems } = useContext(cartContext)
+    const [quantity, setQuantity] = useState(1)
 
     // console.log(contentfulData)
 
@@ -99,14 +98,18 @@ const Page = () => {
 
             </div>
             <div className="counter">
-                <Counter />
+                <Counter quantity={quantity} setQuantity={setQuantity} />
 
 
-                <AddCartBtn onClick={() => addItemToCart(
-                    productId('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData),
-                    productName('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData),
-                    productPrice('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData), cartItems, setCartItems)
-                } />
+                <AddCartBtn onClick={() => {
+                    alert(`${quantity} items added to cart`)
+                    setQuantity(quantity)
+
+                    addItemToCart(
+                        productId('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData),
+                        productName('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData),
+                        productPrice('53Eq5cO1G5ZMzbhJyRL4A8', contentfulData), quantity, cartItems, setCartItems)
+                }} />
 
             </div>
             <div className="overview descoverview">
