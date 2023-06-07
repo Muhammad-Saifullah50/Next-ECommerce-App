@@ -1,4 +1,3 @@
-import styles from '@/styles/global-items.module.css'
 import { useContext } from 'react'
 import dataContext from '@/context/dataContext'
 import Image from 'next/image'
@@ -11,7 +10,7 @@ import Link from 'next/link'
 export const renderTitle = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <h3 key={item.sys.id}>{item?.fields?.title}</h3> : null
+    return item ? <h3 className='text-lg ' key={item.sys.id}>{item?.fields?.title}</h3> : null
 
 }
 
@@ -23,7 +22,7 @@ export const renderImage = (id, alt, contentfulData) => {
     if (asset) {
         const imageUrl = 'https:' + asset.fields.file.url
 
-        return <Image src={imageUrl} width={144} height={144} alt={alt} key={asset.sys.id} />
+        return <Image className='' src={imageUrl} width={170} height={170} alt={alt} key={asset.sys.id} />
 
     }
 
@@ -31,14 +30,14 @@ export const renderImage = (id, alt, contentfulData) => {
 export const renderPrice = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <p key={item.sys.id}>Price: {item?.fields?.price}</p> : null;
+    return item ? <p  key={item.sys.id}>Price: {item?.fields?.price}</p> : null;
 
 
 }
 export const renderRating = (id, contentfulData) => {
     const item = contentfulData?.items?.find((item) => item.sys.id === id)
 
-    return item ? <p key={item.sys.id}>Rating: {item?.fields?.rating}</p> : null
+    return item ? <p  key={item.sys.id}>Rating: {item?.fields?.rating}</p> : null
 
 }
 const Items = () => {
@@ -48,71 +47,82 @@ const Items = () => {
 
     return (
         <>
-            <div className={styles.itembox}>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
+            <div className="itembox">
+                <div className="itempage-items ">
+                    <div className="itempage-itemheading ">
                         {renderTitle('7sceAfoiIoR9lWTij4uubi', contentfulData)}
-
-                        <div className={styles.rateprice}>
-
-                            {renderPrice('7sceAfoiIoR9lWTij4uubi', contentfulData)}
-                            {renderRating('7sceAfoiIoR9lWTij4uubi', contentfulData)}
-
+                    </div>
+                    <div className="bottom flex justify-between ">
+                        <div className="details mx-auto sm:ml-0 ">
+                            <div className="itempage-itemrateprice ">
+                                {renderPrice('7sceAfoiIoR9lWTij4uubi', contentfulData)}
+                                {renderRating('7sceAfoiIoR9lWTij4uubi', contentfulData)}
+                            </div>
+                            <div className="btn flex justify-center">
+                                <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'>
+                                    <button className="itempage-button">Read More</button>
+                                </Link>
+                            </div>
                         </div>
-                        
-                        <Link href='/bandSawsPage/Desc/Desc-M-001/Desc_M_001'><button className={styles.button}>Read More</button></Link>
-
+                        <div className="itempage-image ">
+                            {renderImage('3yVcW9wxP135N934utsvAo', 'alt', contentfulData)}
+                        </div>
                     </div>
-
-                    <div className={styles.image}>
-                        {renderImage('3yVcW9wxP135N934utsvAo', 'alt', contentfulData)}
-                    </div>
-
                 </div>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
+
+
+                <div className="itempage-items ">
+                    <div className="itempage-itemheading ">
                         {renderTitle('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
-
-                        <div className={styles.rateprice}>
-
-                            {renderPrice('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
-                            {renderRating('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
-
+                    </div>
+                    <div className="bottom flex justify-between">
+                        <div className="details mx-auto sm:ml-0">
+                            <div className="itempage-itemrateprice ">
+                                {renderPrice('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
+                                {renderRating('TmzGBkOfmuQ7dAUhQR3Rj', contentfulData)}
+                            </div>
+                            <div className="btn flex justify-center">
+                                <Link href='/bandSawsPage/Desc/Desc-M-003/Desc_M_003'>
+                                    <button className="itempage-button">Read More</button>
+                                </Link>
+                            </div>
                         </div>
-                        
-                        <Link href='/bandSawsPage/Desc/Desc-M-003/Desc_M_003'><button className={styles.button}>Read More</button></Link>
-
+                        <div className="itempage-image ">
+                            {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'alt', contentfulData)}
+                        </div>
                     </div>
-
-                    <div className={styles.image}>
-                        {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'alt', contentfulData)}
-                    </div>
-
                 </div>
-                <div className={styles.items}>
-                    <div className={styles.heading}>
+                <div className="itempage-items ">
+                    <div className="itempage-itemheading ">
                         {renderTitle('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
-
-                        <div className={styles.rateprice}>
-
-                            {renderPrice('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
-                            {renderRating('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
-
+                    </div>
+                    <div className="bottom flex justify-between">
+                        <div className="details mx-auto sm:ml-0">
+                            <div className="itempage-itemrateprice">
+                                {renderPrice('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
+                                {renderRating('3Popbf2nkOxtmAALlR4qPm', contentfulData)}
+                            </div>
+                            <div className="btn flex justify-center">
+                                <Link href='/bandSawsPage/Desc/Desc-M-002/Desc_M_002'>
+                                    <button className="itempage-button">Read More</button>
+                                </Link>
+                            </div>
                         </div>
-                        
-                        <Link href='/bandSawsPage/Desc/Desc-M-002/Desc_M_002'><button className={styles.button}>Read More</button></Link>
-
+                        <div className="itempage-image">
+                            {renderImage('4thrwDMdiKLXzVYfSGLHSV', 'alt', contentfulData)}
+                        </div>
                     </div>
-
-                    <div className={styles.image}>
-                        {renderImage('4thrwDMdiKLXzVYfSGLHSV', 'alt', contentfulData)}
-                    </div>
-
                 </div>
             </div>
         </>
     )
 }
+
 export default Items
+
+
+
+
+
 
 

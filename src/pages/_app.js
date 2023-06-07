@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
   const initialLoading = () => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return timer; // Return the timeout reference
   };

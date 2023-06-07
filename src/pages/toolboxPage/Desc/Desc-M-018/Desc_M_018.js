@@ -1,4 +1,3 @@
-import styles from '@/styles/global-desc.module.css'
 import ApiDataState from '@/context/dataState'
 import Header from '@/components/header/Header'
 import Footer from '@/components/Footer/Footer'
@@ -9,9 +8,9 @@ const Desc_M_018 = () => {
 
     return (<>
         <Header />
-        <div className={styles.banner}>
-        <Link href='/toolboxPage/ToolboxPage'> <button className={styles.btn}>Go Back</button></Link>
-            <h2>DeWalt Heavy Duty ELectrician Toolkit M-018</h2>
+        <div className="desc-banner">
+        <Link href='/toolboxPage/ToolboxPage'> <button className="back-btn">Go Back</button></Link>
+            <h2 className='desc-h2'>DeWalt Heavy Duty ELectrician Toolkit M-018</h2>
         </div>
         <ApiDataState>
             <Page />

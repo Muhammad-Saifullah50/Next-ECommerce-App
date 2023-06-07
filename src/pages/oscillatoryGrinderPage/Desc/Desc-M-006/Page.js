@@ -1,6 +1,5 @@
-import styles from '@/styles/global-desc-page.module.css'
 import dataContext from '@/context/dataContext'
-import { useContext } from 'react'
+import { useContext,useState } from 'react'
 import { renderTitle, renderImage, renderPrice } from '@/pages/bandSawsPage/Items/Items'
 import Counter from '@/components/counter/Counter'
 import cartContext from '@/context/cart-context/cartContext'
@@ -12,43 +11,48 @@ const Page = () => {
     const contentfulData = useContext(dataContext)
     // console.log(contentfulData)
     const {cartItems, setCartItems} = useContext(cartContext)
+    const [quantity, setQuantity] = useState(1)
+
 
     return (<>
-        <div className={styles.page}>
+        <div className="page descpage  ">
 
-            <div className={styles.intro}>
-                <div className={styles.introbox}>
-
-                    <div className={styles.heading}>
+<div className="intro descintro">
+    <div className="introbox">
+        <div className="heading descheading">
                         {renderTitle('2iz1IxUacC0wEP3vceWA1I', contentfulData)}
                     </div>
-                    <div className={styles.price}>
+
+                    <div className="price descprice">
                         {renderPrice('2iz1IxUacC0wEP3vceWA1I', contentfulData)}
 
                     </div>
-                    <div className={styles.introtext}>
-                        <h3>Introduction</h3>
+                    <div className="introtext">
+                        <h3 className='text-lg font-bold'>Introduction</h3>
                         {renderIntro('2iz1IxUacC0wEP3vceWA1I', contentfulData)}
                     </div>
                 </div>
-                <div className={styles.image}>
+                <div className="image descimage">
                     {renderImage('6aXf5x2FQfnyTGOz3fiLkE', 'alt', contentfulData)}
                 </div>
 
             </div>
-            <div className={styles.counter}>
-                <Counter />
+            <div className="counter">
+            <Counter quantity={quantity} setQuantity={setQuantity} />
                 <AddCartBtn onClick={() => {
+                    alert(`${quantity} items added to cart`)
+                    setQuantity(quantity)
+
                     addItemToCart(
                         productId('2iz1IxUacC0wEP3vceWA1I', contentfulData),
                         productName('2iz1IxUacC0wEP3vceWA1I', contentfulData),
-                        productPrice('2iz1IxUacC0wEP3vceWA1I', contentfulData),cartItems,setCartItems
+                        productPrice('2iz1IxUacC0wEP3vceWA1I', contentfulData),quantity,cartItems,setCartItems
                     )
                 }}/>
 
             </div>
-            <div className={styles.overview}>
-                <h3>Product Overview</h3>
+            <div className="overview descoverview">
+                <h3 className='text-lg font-bold'>Product Overview</h3>
                 {renderOverview('2iz1IxUacC0wEP3vceWA1I', contentfulData)}
             </div>
 

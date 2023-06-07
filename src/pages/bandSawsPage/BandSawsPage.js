@@ -1,4 +1,3 @@
-import styles from '@/styles/global-category-pages.module.css'
 import Header from '@/components/header/Header'
 
 import ApiDataState from '@/context/dataState'
@@ -14,8 +13,8 @@ const BandSawsPage = () => {
         <>
 
             <Header />
-            <div className={styles.banner}>
-                <h2> Dewalt Heavy Duty Band Saws </h2>
+            <div className="categorypage-banner ">
+                <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold'> Dewalt Heavy Duty Band Saws </h2>
             </div>
             <ApiDataState>
                 <Items />

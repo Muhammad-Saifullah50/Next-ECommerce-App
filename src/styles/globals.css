@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,5 +15,76 @@ body {
   overflow-x: clip;
   font-family: 'Baloo Bhai 2', cursive;
   background-color: #f0f3ff;
+}
+
+/* styles fior cards in category page */
+.categorypage-cards {
+  @apply flex flex-col items-center rounded-xl bg-white w-[40vh] h-[40vh] mx-5 my-5 hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg
+}
+
+/* styles for banner of category pages */
+.categorypage-banner {
+  @apply flex justify-center items-center w-full h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] bg-[url('/images/black.jpg')] bg-no-repeat text-slate-200
+}
+
+/* styles for category pages of products */
+.itempage-items {
+  @apply rounded-xl bg-white mx-4 my-4 shadow-slate-500 shadow-lg h-56 py-3
+}
+
+.itempage-itemheading {
+  @apply flex justify-center even:font-bold odd:font-bold
+}
+
+.itempage-itemrateprice {
+  @apply flex w-1/2 my-2 mx-6 sm:flex sm:flex-col sm:w-36 even:text-lg odd:text-lg
+}
+
+.itempage-button {
+  @apply bg-yellow-500 px-3 py-1 my-2 -ml-12
+}
+
+.itempage-image {
+  @apply mx-auto sm:absolute right-10 my-auto
+}
+
+/* styles for description page back button */
+
+.back-btn{
+  @apply bg-yellow-500 hover:bg-yellow-400 text-black px-2 py-1 ml-6 sm:ml-9 md:ml-12 lg:ml-14 xl:ml-20 mb-5
+}
+/* styles for banner of description pages */
+.desc-banner {
+  @apply flex flex-col justify-center w-full h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[45vh] bg-[url('/images/black.jpg')] bg-no-repeat text-slate-200
+}
+.desc-h2{
+  @apply  text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold ml-6 sm:ml-9 md:ml-12 lg:ml-14 xl:ml-20 mb-5
+}
+
+/* styles for page of description  */
+
+.descpage{
+  @apply w-full bg-white px-8 py-8 md:w-[95%] mx-auto
+}
+.descintro{
+  @apply w-full  flex flex-col sm:flex-row justify-between
+}
+.descheading{
+  @apply flex mb-4 text-xl font-bold
+}
+.descprice{
+  @apply flex mb-4 text-yellow-500 text-xl
+}
+.introbox{
+  @apply sm:w-[60%]
+}
+.descimage{
+  @apply flex justify-center items-center mb-9 mt-4 sm:w-[40%]
+}
+.descoverview{
+  @apply whitespace-pre-line
+}
+.counter{
+  @apply flex mb-5 
 }
 

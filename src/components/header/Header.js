@@ -1,7 +1,6 @@
 import Topbar from "./topbar/topbar"
 import Lowerbar from "./lowerbar/lowerbar"
 import Navbar from "./navbar/navbar"
-import styles from '@/styles/header.module.css'
 const Header = () => {
 
     return (
@@ -9,7 +8,7 @@ const Header = () => {
 
             <Topbar />
             <Lowerbar />
-            <div className={styles.navbar}>
+            <div className="navbar sticky top-0 z-40">
             <Navbar />
         </div >
         </>
