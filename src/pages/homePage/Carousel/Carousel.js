@@ -14,7 +14,7 @@ const Carousel = () => {
       <div className="imgslider h-[35vh] w-full md:w-[95%] md:h-[40vh] lg:h-[60vh] md:mt-5 md:mx-auto" id={styles.imgslider}>
         {/* above small screens inside carousel */}
 
-      <div className="carouseltext hidden md:flex flex-col  absolute bg-black opacity-80 text-white w-[40%] left-[57%] h-[40vh] lg:h-[60vh] px-5 py-10 ">
+      <div className="carouseltext hidden md:flex flex-col  absolute bg-black opacity-80 text-white w-[40%] left-[57%] h-[40vh] lg:h-[60vh] px-5 py-16 ">
         <h2 className='md:text-2xl md:font-bold'>Professional Power Tools</h2>
         <p className='text-base md:text-xl md:pt-10'>Over the years, we have created professional power tools and equipment that complement your construction and building process.</p>
       </div>

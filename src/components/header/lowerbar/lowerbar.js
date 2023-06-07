@@ -20,9 +20,9 @@ const lowerbar = () => {
                 </Image>
             </div>
 
-            <div className="cartbox flex justify-center w-1/2 mr-5">
+            <div className="cartbox flex justify-center w-1/2 mr-5 " >
                 <Link href='/cartPage/CartPage'>
-                    <div className="carttext w-full flex justify-between m-auto ">&nbsp;Shopping Cart
+                    <div className="carttext w-full flex justify-between m-auto hover:bg-slate-300 h-10 items-center rounded-xl ">&nbsp;Shopping Cart
 
                         <Image  className='ml-4' src="/images/cart1.png" width={25} height={23} alt='cart'>
                         </Image>
