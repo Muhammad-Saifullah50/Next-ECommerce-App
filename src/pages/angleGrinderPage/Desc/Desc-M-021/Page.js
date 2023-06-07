@@ -44,7 +44,7 @@ const Page = () => {
                     addItemToCart(
                         productId('1IuGmnKA8KYvaI71h2W97i', contentfulData),
                         productName('1IuGmnKA8KYvaI71h2W97i', contentfulData),
-                        productName('1IuGmnKA8KYvaI71h2W97i', contentfulData),quantity,
+                        productPrice('1IuGmnKA8KYvaI71h2W97i', contentfulData),quantity,
                         cartItems, setCartItems
 
                     )
