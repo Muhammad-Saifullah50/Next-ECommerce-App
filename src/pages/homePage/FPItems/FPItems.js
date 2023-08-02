@@ -36,11 +36,11 @@ const FPItems = () => {
 
                 <div className="cards flex flex-col items-center  rounded-xl  bg-white w-[30vh] h-[35vh] mx-5 my-5 hover:scale-110 hover:ease-in hover:duration-500 shadow-slate-500 shadow-lg">
 
-                    <div className="fptitle text-lg">{renderTitle('42C2IdgXsc62NDz5rFWJrI', contentfulData)}</div>
+                    <div className="fptitle text-lg">{renderTitle('1r5GqxlKaejhajWlCJKBpY', contentfulData)}</div>
 
                     <div className="fpimg w-[22vh] h-[22vh] flex justify-center my-2">{renderImage('tCrbRiWSIkuQQcSKqIFPf', 'fp1', contentfulData)}</div>
 
-                    <div className="fpprice text-lg">{renderPrice('42C2IdgXsc62NDz5rFWJrI')}</div>
+                    <div className="fpprice text-lg">PKR 13,000</div>
                 </div>
             </Link>
             <Link className="link" href='oscillatoryGrinderPage/OscillatoryGrinderPage'>

@@ -13,7 +13,7 @@ const Categories = () => {
         <div className="heading w-full flex justify-center text-xl md:2xl  h-14 items-center  ">
             <h2 className='font-bold md:font-extrabold'>Select a category to get started</h2>
         </div>
-        <div className="categories bg-white py-12">
+        <div className="categories bg-slate-50 py-12">
 
             <div className="cardgrid flex flex-wrap justify-center">
                 
@@ -38,7 +38,7 @@ const Categories = () => {
                             {renderImage('tCrbRiWSIkuQQcSKqIFPf', 'category2', contentfulData)}
                         </div>
 
-                        <div className="categorytitle text-lg">{renderTitle('42C2IdgXsc62NDz5rFWJrI', contentfulData)}
+                        <div className="categorytitle text-lg">{renderTitle('1r5GqxlKaejhajWlCJKBpY', contentfulData)}
                         </div>
                     </div>
 
