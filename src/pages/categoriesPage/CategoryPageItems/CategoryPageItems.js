@@ -63,21 +63,8 @@ const CategoryPageItems = () => {
                         <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
 
                 </div>
-                <div className="categorypage-cards">
-                    {renderTitle('3HsYBYwZOvs144Oolb1UNh')}
-                    {renderImage('6vMNCHJuh4JgYhmIYkFWZQ', 'light saw')}
-                    {renderPriceRange('3HsYBYwZOvs144Oolb1UNh')}
-                    <Link href='/lightSawsPage/LightSawsPage'>
-                        <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
-
-                </div>
-                <div className="categorypage-cards ">
-                    {renderTitle('2XUe7Njq7CcFT5NLEY2qKd')}
-                    {renderImage('29fPL5QFfyWPxCAZ0pkiQz', 'saw image')}
-                    {renderPriceRange('2XUe7Njq7CcFT5NLEY2qKd')}
-                    <Link href='/heavySawsPage/HeavySawsPage'>
-                        <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
-                </div>
+              
+                
                 <div className="categorypage-cards ">
                     {renderTitle('69DvSE0PiR3lHL59J0UDAn')}
                     {renderImage('5dfnNWPtRhjV9aidvKNEGh', 'drill image')}
@@ -86,23 +73,8 @@ const CategoryPageItems = () => {
                         <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
 
                 </div>
-                <div className="categorypage-cards">
-                    {renderTitle('1uFjdcSUky6zKKj2iW17tP')}
-                    {renderImage('28uDfdCuQxxxuzCMwiXQWT', 'tool boxes')}
-                    {renderPriceRange('1uFjdcSUky6zKKj2iW17tP')}
-                    <Link href='/toolboxPage/ToolboxPage'>
-                        <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
-
-
-                </div>
-                <div className="categorypage-cards">
-                    {renderTitle('3N4myZ4d9WUSKS8cQOZhEl')}
-                    {renderImage('4mKPrdHCD0HCi93hgvar6G', 'air blower')}
-                    {renderPriceRange('3N4myZ4d9WUSKS8cQOZhEl')}
-                    <Link href='/airBlowerPage/AirBlowerPage'>
-                        <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
-
-                </div>
+                
+               
                 <div className="categorypage-cards">
                     {renderTitle('63IYjassGWyuEvwGmSgmr')}
                     {renderImage('1thaKzAhUAhdU3jf2XzW7w', 'angle grinder')}
@@ -119,22 +91,8 @@ const CategoryPageItems = () => {
                         <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
 
                 </div>
-                <div className="categorypage-cards">
-                    {renderTitle('4bBfP2moIvvRJV8tTjPoC3')}
-                    {renderImage('3cv9gZ8URV4IiI6lpmHKBE', 'polisher')}
-                    {renderPriceRange('4bBfP2moIvvRJV8tTjPoC3')}
-                    <Link href='/polishersPage/PolisherPage'>
-                        <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
-
-                </div>
-                <div className="categorypage-cards ">
-                    {renderTitle('4aFepZTkhNpPcj4MVhyAVj')}
-                    {renderImage('6M9cqMoRwwyoTrGWdpgyFl', 'stapler')}
-                    {renderPriceRange('4aFepZTkhNpPcj4MVhyAVj')}
-                    <Link href='/staplerPage/StaplerPage'>
-                        <button className="btn bg-yellow-500 px-7 py-[2px] my-2">Explore</button></Link>
-
-                </div>
+                
+              
                 <div className="categorypage-cards">
                     {renderTitle('433Z0st7xwyTiXiRwR0fLr')}
                     {renderImage('2dVLKUXcxYs98j9NSnt1ag', 'miscellanous')}
